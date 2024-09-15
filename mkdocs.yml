@@ -1,27 +1,23 @@
-site_name: Strategy Reports
+site_name: HGT Reports
 
 nav:
   - Home: index.md
   - Strategies: 
-    - Strategy9/strategy9.md
-    - Strategy10/strategy10.md
-    - Strategy11/strategy11.md
-    - Strategy11D/strategy11d.md
+      - Strategy9: Strategy9/strategy9.md
+      - Strategy10: Strategy10/strategy10.md
+      - Strategy11: Strategy11/strategy11.md
+      - Strategy11D: Strategy11D/strategy11d.md
   - Indicator Reports:
-    
 
 theme:
   name: material
   logo: images/stocks.png
   favicon: images/favicon.ico
-  
+
 copyright: © 2023 Hunt Gather Trade. All rights reserved.
 
 extra:
   generator: false
-
-extra:
-  generator:  false
   social:
     - icon: fontawesome/brands/x-twitter
       link: https://x.com/huntgathertrade
@@ -29,3 +25,4 @@ extra:
       link: https://github.com/larrykann
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/kanncommalarry/
+
