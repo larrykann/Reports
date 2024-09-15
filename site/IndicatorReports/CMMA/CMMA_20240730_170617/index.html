@@ -1,0 +1,1446 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Larry Kann">
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+    
+    
+      
+        <title>Close Minus Moving Average - HGT Reports</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.35f28582.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#indicator-soundness-report-cmma" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="HGT Reports" class="md-header__button md-logo" aria-label="HGT Reports" data-md-component="logo">
+      
+  <img src="../../../images/stocks.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            HGT Reports
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Close Minus Moving Average
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="HGT Reports" class="md-nav__button md-logo" aria-label="HGT Reports" data-md-component="logo">
+      
+  <img src="../../../images/stocks.png" alt="logo">
+
+    </a>
+    HGT Reports
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Strategies
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Strategies
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Strategy9/strategy9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Strategy9
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Strategy10/strategy10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Strategy10
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Strategy11/strategy11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Strategy11
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Strategy11D/strategy11d/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Strategy11D
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#simple-statistics-and-relative-entropy-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simple Statistics and Relative Entropy Report
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mutual-information-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mutual Information Report
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serial-correlated-mean-break-test-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serial Correlated Mean Break Test Report
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optimal-thresholds-w-profit-factor-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optimal Thresholds w/ Profit Factor Report
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Optimal Thresholds w/ Profit Factor Report">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cmma_10_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      cmma_10_25
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cmma_20_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      cmma_20_10
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cmma_50_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      cmma_50_5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cmma_100_2_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      cmma_100_2_5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cmma_200_1_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      cmma_200_1_5
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="indicator-soundness-report-cmma">Indicator Soundness Report CMMA</h1>
+<p>The generated report provides a comprehensive analysis of trading indicators, offering insights into their statistical properties, predictive power, mean stability over time, and optimal thresholds for profitability. It combines detailed statistical summaries, mutual information scores, mean break tests, and profit factor evaluations.
+<img alt="cmma_10_25" src="cmma_10_25.png" /></p>
+<p><img alt="cmma_20_10" src="cmma_20_10.png" /></p>
+<p><img alt="cmma_50_5" src="cmma_50_5.png" /></p>
+<p><img alt="cmma_100_2_5" src="cmma_100_2_5.png" /></p>
+<p><img alt="cmma_200_1_5" src="cmma_200_1_5.png" /></p>
+<p><img alt="log_returns" src="Reports/docs/IndicatorReports/CMMA/images/log_returns.png" />`</p>
+<div style="page-break-after: always;"></div>
+<h2 id="simple-statistics-and-relative-entropy-report">Simple Statistics and Relative Entropy Report</h2>
+<p>The Simple Statistics Table summarizes key metrics for each trading indicator, including the number of cases, mean, minimum, maximum, interquartile range (IQR), range/IQR ratio, and relative entropy. In the table, a lower range/IQR ratio suggests a tighter, more predictable dataset, while an optimal relative entropy indicates a balance of diversity and uniqueness without excessive noise.</p>
+<p><strong>Ncases</strong>: Number of cases (bars) in feature (indicator).
+<strong>Mean</strong>: Average value of the feature across all cases.
+<strong>Min/Max</strong>: The minimum and maximum value of the feature across all cases.
+<strong>IQR</strong>: Interquartile Range, measures range minus the top and bottom 25% of the raw range.
+<strong>Range/IQR</strong>: A unitless measure of data dispersion relative to its middle 50%.
+<strong>Relative Entropy</strong>: Measures the difference between two probability distributions; a value of zero indicates identical distributions.</p>
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th>Ncases</th>
+<th>Mean</th>
+<th>Min</th>
+<th>Max</th>
+<th>IQR</th>
+<th>rnq/IQR</th>
+<th>Relative Entropy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cmma_10_25</td>
+<td>7931</td>
+<td>4.5894</td>
+<td>-50.0000</td>
+<td>49.7551</td>
+<td>33.6552</td>
+<td>2.9640</td>
+<td>0.9472</td>
+</tr>
+<tr>
+<td>cmma_20_10</td>
+<td>7931</td>
+<td>5.7771</td>
+<td>-50.0000</td>
+<td>49.4991</td>
+<td>31.6973</td>
+<td>3.1390</td>
+<td>0.9258</td>
+</tr>
+<tr>
+<td>cmma_50_5</td>
+<td>7931</td>
+<td>7.9705</td>
+<td>-50.0000</td>
+<td>49.0778</td>
+<td>29.4103</td>
+<td>3.3688</td>
+<td>0.9059</td>
+</tr>
+<tr>
+<td>cmma_100_2_5</td>
+<td>7931</td>
+<td>10.5554</td>
+<td>-49.9975</td>
+<td>49.1351</td>
+<td>27.8870</td>
+<td>3.5548</td>
+<td>0.8993</td>
+</tr>
+<tr>
+<td>cmma_200_1_5</td>
+<td>7931</td>
+<td>13.8967</td>
+<td>-49.6575</td>
+<td>48.7621</td>
+<td>30.3082</td>
+<td>3.2473</td>
+<td>0.8915</td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+
+<h2 id="mutual-information-report">Mutual Information Report</h2>
+<p>High MI scores indicate a strong relationship between the indicator and the target variable, suggesting potential predictive power. Low p-values further validate the indicator's statistical significance.</p>
+<p><strong>MI Score</strong>: Measures the mutual dependence between the feature and the target.
+<strong>Solo p-value</strong>: Initial significance estimate, proportion of permuted MI scores equal to or higher than the original MI scores.
+<strong>Unbiased p-value</strong>: Adjusted solo p-value considering the number of permutations plus one, reducing bias.</p>
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th>MI Score</th>
+<th>Solo p-value</th>
+<th>Unbiased p-value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cmma_10_25</td>
+<td>0.0804</td>
+<td>0.0000</td>
+<td>0.0099</td>
+</tr>
+<tr>
+<td>cmma_20_10</td>
+<td>0.0692</td>
+<td>0.0000</td>
+<td>0.0099</td>
+</tr>
+<tr>
+<td>cmma_50_5</td>
+<td>0.0657</td>
+<td>0.0000</td>
+<td>0.0099</td>
+</tr>
+<tr>
+<td>cmma_100_2_5</td>
+<td>0.0659</td>
+<td>0.0000</td>
+<td>0.0099</td>
+</tr>
+<tr>
+<td>cmma_200_1_5</td>
+<td>0.0591</td>
+<td>0.0000</td>
+<td>0.0099</td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+
+<h2 id="serial-correlated-mean-break-test-report">Serial Correlated Mean Break Test Report</h2>
+<p>The Serial Correlated Mean Break Test Report identifies potential breaks in the mean of each trading indicator, taking into account serial correlation. This test helps detect significant shifts in the mean over time, indicating nonstationary behavior in the data.</p>
+<p><strong>nrecent</strong>: The number of recent observations considered in the test.
+<strong>z(U)</strong>: The greatest break encountered in the mean across the user-specified range.
+<strong>Solo p-value</strong>: Measures the significance of the greatest break while accounting for the entire range of boundaries searched. If this value is not small, it suggests that the indicator does not have a significant mean break.
+<strong>Unbiased p-value</strong>: Adjusted solo p-value considering the number of permutations plus one, reducing bias.</p>
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th>nrecent</th>
+<th>z(U)</th>
+<th>Solo p-value</th>
+<th>Unbiased p-value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cmma_10_25</td>
+<td>4900</td>
+<td>8.6745</td>
+<td>0.6900</td>
+<td>1.0000</td>
+</tr>
+<tr>
+<td>cmma_20_10</td>
+<td>4900</td>
+<td>8.6745</td>
+<td>0.8300</td>
+<td>1.0000</td>
+</tr>
+<tr>
+<td>cmma_50_5</td>
+<td>4900</td>
+<td>8.6745</td>
+<td>0.4800</td>
+<td>1.0000</td>
+</tr>
+<tr>
+<td>cmma_100_2_5</td>
+<td>4900</td>
+<td>8.6745</td>
+<td>0.3800</td>
+<td>1.0000</td>
+</tr>
+<tr>
+<td>cmma_200_1_5</td>
+<td>4900</td>
+<td>8.6745</td>
+<td>0.4500</td>
+<td>1.0000</td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+
+<h2 id="optimal-thresholds-w-profit-factor-report">Optimal Thresholds w/ Profit Factor Report</h2>
+<p>The Optimal Thresholds w/ Profit Factor Report evaluates various threshold levels for trading indicators to identify the most profitable long and short positions. The report includes the fraction of data points greater than or equal to the threshold, the corresponding profit factor for long and short positions, and the fraction of data points less than the threshold with their respective profit factors. The optimal thresholds at the bottom indicate the threshold levels with the highest profit factors for long and short positions, while the p-values provide statistical significance for these thresholds.</p>
+<h3 id="cmma_10_25">cmma_10_25</h3>
+<table>
+<thead>
+<tr>
+<th>Threshold</th>
+<th>Frac Gtr/Eq</th>
+<th>Long PF</th>
+<th>Short PF</th>
+<th>Frac Less</th>
+<th>Short PF</th>
+<th>Long PF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-49.030</td>
+<td>0.990</td>
+<td>1.0992</td>
+<td>0.9097</td>
+<td>0.010</td>
+<td>0.8102</td>
+<td>1.2342</td>
+</tr>
+<tr>
+<td>-38.616</td>
+<td>0.950</td>
+<td>1.0693</td>
+<td>0.9352</td>
+<td>0.050</td>
+<td>0.6969</td>
+<td>1.4350</td>
+</tr>
+<tr>
+<td>-29.575</td>
+<td>0.900</td>
+<td>1.0674</td>
+<td>0.9369</td>
+<td>0.100</td>
+<td>0.7772</td>
+<td>1.2867</td>
+</tr>
+<tr>
+<td>-16.743</td>
+<td>0.800</td>
+<td>1.0629</td>
+<td>0.9408</td>
+<td>0.200</td>
+<td>0.8314</td>
+<td>1.2027</td>
+</tr>
+<tr>
+<td>-5.871</td>
+<td>0.700</td>
+<td>1.0606</td>
+<td>0.9429</td>
+<td>0.300</td>
+<td>0.8565</td>
+<td>1.1676</td>
+</tr>
+<tr>
+<td>0.166</td>
+<td>0.600</td>
+<td>1.0572</td>
+<td>0.9459</td>
+<td>0.400</td>
+<td>0.8682</td>
+<td>1.1518</td>
+</tr>
+<tr>
+<td>7.316</td>
+<td>0.500</td>
+<td>1.0460</td>
+<td>0.9560</td>
+<td>0.500</td>
+<td>0.8745</td>
+<td>1.1435</td>
+</tr>
+<tr>
+<td>13.409</td>
+<td>0.400</td>
+<td>1.0412</td>
+<td>0.9604</td>
+<td>0.600</td>
+<td>0.8821</td>
+<td>1.1337</td>
+</tr>
+<tr>
+<td>19.548</td>
+<td>0.300</td>
+<td>0.9833</td>
+<td>1.0170</td>
+<td>0.700</td>
+<td>0.8752</td>
+<td>1.1426</td>
+</tr>
+<tr>
+<td>25.502</td>
+<td>0.200</td>
+<td>0.9692</td>
+<td>1.0317</td>
+<td>0.800</td>
+<td>0.8843</td>
+<td>1.1308</td>
+</tr>
+<tr>
+<td>32.890</td>
+<td>0.100</td>
+<td>0.8926</td>
+<td>1.1203</td>
+<td>0.900</td>
+<td>0.8883</td>
+<td>1.1258</td>
+</tr>
+<tr>
+<td>37.850</td>
+<td>0.050</td>
+<td>0.7533</td>
+<td>1.3275</td>
+<td>0.950</td>
+<td>0.8887</td>
+<td>1.1252</td>
+</tr>
+<tr>
+<td>45.148</td>
+<td>0.010</td>
+<td>0.6194</td>
+<td>1.6144</td>
+<td>0.990</td>
+<td>0.8989</td>
+<td>1.1125</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Grand profit factor</strong>: 1.104
+<strong>Optimal long threshold</strong>: -38.6158, profit factor = 1.435
+<strong>Optimal short threshold</strong>: 37.8551, profit factor = 1.330</p>
+<p><strong>P-values</strong>: Long=0.000, Unbiased Long=0.010
+<strong>P-values</strong>: Short=0.000, Unbiased Short=0.010</p>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+
+<h3 id="cmma_20_10">cmma_20_10</h3>
+<table>
+<thead>
+<tr>
+<th>Threshold</th>
+<th>Frac Gtr/Eq</th>
+<th>Long PF</th>
+<th>Short PF</th>
+<th>Frac Less</th>
+<th>Short PF</th>
+<th>Long PF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-47.929</td>
+<td>0.990</td>
+<td>1.0965</td>
+<td>0.9120</td>
+<td>0.010</td>
+<td>0.7693</td>
+<td>1.2999</td>
+</tr>
+<tr>
+<td>-36.271</td>
+<td>0.950</td>
+<td>1.0800</td>
+<td>0.9259</td>
+<td>0.050</td>
+<td>0.7687</td>
+<td>1.3009</td>
+</tr>
+<tr>
+<td>-27.524</td>
+<td>0.900</td>
+<td>1.0665</td>
+<td>0.9377</td>
+<td>0.100</td>
+<td>0.7821</td>
+<td>1.2786</td>
+</tr>
+<tr>
+<td>-14.147</td>
+<td>0.800</td>
+<td>1.0730</td>
+<td>0.9320</td>
+<td>0.200</td>
+<td>0.8523</td>
+<td>1.1733</td>
+</tr>
+<tr>
+<td>-3.751</td>
+<td>0.700</td>
+<td>1.1052</td>
+<td>0.9048</td>
+<td>0.300</td>
+<td>0.9062</td>
+<td>1.1036</td>
+</tr>
+<tr>
+<td>2.633</td>
+<td>0.600</td>
+<td>1.0950</td>
+<td>0.9132</td>
+<td>0.400</td>
+<td>0.8986</td>
+<td>1.1128</td>
+</tr>
+<tr>
+<td>9.713</td>
+<td>0.500</td>
+<td>1.0895</td>
+<td>0.9179</td>
+<td>0.500</td>
+<td>0.8983</td>
+<td>1.1132</td>
+</tr>
+<tr>
+<td>15.406</td>
+<td>0.400</td>
+<td>1.0916</td>
+<td>0.9160</td>
+<td>0.600</td>
+<td>0.9013</td>
+<td>1.1095</td>
+</tr>
+<tr>
+<td>20.510</td>
+<td>0.300</td>
+<td>1.0750</td>
+<td>0.9303</td>
+<td>0.700</td>
+<td>0.8992</td>
+<td>1.1121</td>
+</tr>
+<tr>
+<td>25.332</td>
+<td>0.200</td>
+<td>1.0049</td>
+<td>0.9952</td>
+<td>0.800</td>
+<td>0.8918</td>
+<td>1.1213</td>
+</tr>
+<tr>
+<td>31.311</td>
+<td>0.100</td>
+<td>0.9251</td>
+<td>1.0810</td>
+<td>0.900</td>
+<td>0.8932</td>
+<td>1.1196</td>
+</tr>
+<tr>
+<td>36.077</td>
+<td>0.050</td>
+<td>0.9175</td>
+<td>1.0899</td>
+<td>0.950</td>
+<td>0.8986</td>
+<td>1.1129</td>
+</tr>
+<tr>
+<td>42.431</td>
+<td>0.010</td>
+<td>0.8514</td>
+<td>1.1746</td>
+<td>0.990</td>
+<td>0.9031</td>
+<td>1.1073</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Grand profit factor</strong>: 1.104
+<strong>Optimal long threshold</strong>: -33.3275, profit factor = 1.376
+<strong>Optimal short threshold</strong>: 35.6416, profit factor = 1.134</p>
+<p><strong>P-values</strong>: Long=0.000, Unbiased Long=0.010
+<strong>P-values</strong>: Short=0.000, Unbiased Short=0.010</p>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+
+<h3 id="cmma_50_5">cmma_50_5</h3>
+<table>
+<thead>
+<tr>
+<th>Threshold</th>
+<th>Frac Gtr/Eq</th>
+<th>Long PF</th>
+<th>Short PF</th>
+<th>Frac Less</th>
+<th>Short PF</th>
+<th>Long PF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-45.972</td>
+<td>0.990</td>
+<td>1.0977</td>
+<td>0.9110</td>
+<td>0.010</td>
+<td>0.8038</td>
+<td>1.2441</td>
+</tr>
+<tr>
+<td>-33.403</td>
+<td>0.950</td>
+<td>1.0870</td>
+<td>0.9200</td>
+<td>0.050</td>
+<td>0.8141</td>
+<td>1.2284</td>
+</tr>
+<tr>
+<td>-22.948</td>
+<td>0.900</td>
+<td>1.0794</td>
+<td>0.9265</td>
+<td>0.100</td>
+<td>0.8301</td>
+<td>1.2046</td>
+</tr>
+<tr>
+<td>-9.879</td>
+<td>0.800</td>
+<td>1.0855</td>
+<td>0.9213</td>
+<td>0.200</td>
+<td>0.8760</td>
+<td>1.1416</td>
+</tr>
+<tr>
+<td>-0.258</td>
+<td>0.700</td>
+<td>1.0878</td>
+<td>0.9193</td>
+<td>0.300</td>
+<td>0.8893</td>
+<td>1.1245</td>
+</tr>
+<tr>
+<td>5.294</td>
+<td>0.600</td>
+<td>1.1039</td>
+<td>0.9058</td>
+<td>0.400</td>
+<td>0.9050</td>
+<td>1.1050</td>
+</tr>
+<tr>
+<td>11.513</td>
+<td>0.500</td>
+<td>1.0780</td>
+<td>0.9276</td>
+<td>0.500</td>
+<td>0.8928</td>
+<td>1.1200</td>
+</tr>
+<tr>
+<td>17.011</td>
+<td>0.400</td>
+<td>1.0810</td>
+<td>0.9251</td>
+<td>0.600</td>
+<td>0.8979</td>
+<td>1.1138</td>
+</tr>
+<tr>
+<td>22.280</td>
+<td>0.300</td>
+<td>1.0995</td>
+<td>0.9095</td>
+<td>0.700</td>
+<td>0.9044</td>
+<td>1.1058</td>
+</tr>
+<tr>
+<td>26.894</td>
+<td>0.200</td>
+<td>1.0339</td>
+<td>0.9673</td>
+<td>0.800</td>
+<td>0.8964</td>
+<td>1.1156</td>
+</tr>
+<tr>
+<td>32.128</td>
+<td>0.100</td>
+<td>0.9639</td>
+<td>1.0375</td>
+<td>0.900</td>
+<td>0.8970</td>
+<td>1.1148</td>
+</tr>
+<tr>
+<td>35.785</td>
+<td>0.050</td>
+<td>0.7639</td>
+<td>1.3091</td>
+<td>0.950</td>
+<td>0.8935</td>
+<td>1.1192</td>
+</tr>
+<tr>
+<td>41.144</td>
+<td>0.010</td>
+<td>0.6151</td>
+<td>1.6258</td>
+<td>0.990</td>
+<td>0.9003</td>
+<td>1.1108</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Grand profit factor</strong>: 1.104
+<strong>Optimal long threshold</strong>: -23.7648, profit factor = 1.240
+<strong>Optimal short threshold</strong>: 35.7851, profit factor = 1.309</p>
+<p><strong>P-values</strong>: Long=0.010, Unbiased Long=0.020
+<strong>P-values</strong>: Short=0.000, Unbiased Short=0.010</p>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+
+<h3 id="cmma_100_2_5">cmma_100_2_5</h3>
+<table>
+<thead>
+<tr>
+<th>Threshold</th>
+<th>Frac Gtr/Eq</th>
+<th>Long PF</th>
+<th>Short PF</th>
+<th>Frac Less</th>
+<th>Short PF</th>
+<th>Long PF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-43.805</td>
+<td>0.990</td>
+<td>1.1004</td>
+<td>0.9087</td>
+<td>0.010</td>
+<td>0.8432</td>
+<td>1.1860</td>
+</tr>
+<tr>
+<td>-30.272</td>
+<td>0.950</td>
+<td>1.0920</td>
+<td>0.9157</td>
+<td>0.050</td>
+<td>0.8413</td>
+<td>1.1886</td>
+</tr>
+<tr>
+<td>-19.618</td>
+<td>0.900</td>
+<td>1.0892</td>
+<td>0.9181</td>
+<td>0.100</td>
+<td>0.8618</td>
+<td>1.1604</td>
+</tr>
+<tr>
+<td>-6.137</td>
+<td>0.800</td>
+<td>1.1141</td>
+<td>0.8976</td>
+<td>0.200</td>
+<td>0.9198</td>
+<td>1.0872</td>
+</tr>
+<tr>
+<td>0.501</td>
+<td>0.700</td>
+<td>1.1156</td>
+<td>0.8963</td>
+<td>0.300</td>
+<td>0.9167</td>
+<td>1.0909</td>
+</tr>
+<tr>
+<td>8.198</td>
+<td>0.600</td>
+<td>1.0979</td>
+<td>0.9109</td>
+<td>0.400</td>
+<td>0.9009</td>
+<td>1.1100</td>
+</tr>
+<tr>
+<td>14.574</td>
+<td>0.500</td>
+<td>1.1153</td>
+<td>0.8966</td>
+<td>0.500</td>
+<td>0.9104</td>
+<td>1.0984</td>
+</tr>
+<tr>
+<td>19.582</td>
+<td>0.400</td>
+<td>1.0914</td>
+<td>0.9163</td>
+<td>0.600</td>
+<td>0.9013</td>
+<td>1.1095</td>
+</tr>
+<tr>
+<td>24.536</td>
+<td>0.300</td>
+<td>1.0696</td>
+<td>0.9349</td>
+<td>0.700</td>
+<td>0.8982</td>
+<td>1.1134</td>
+</tr>
+<tr>
+<td>28.526</td>
+<td>0.200</td>
+<td>0.9867</td>
+<td>1.0134</td>
+<td>0.800</td>
+<td>0.8904</td>
+<td>1.1231</td>
+</tr>
+<tr>
+<td>33.334</td>
+<td>0.100</td>
+<td>1.0208</td>
+<td>0.9796</td>
+<td>0.900</td>
+<td>0.9002</td>
+<td>1.1109</td>
+</tr>
+<tr>
+<td>38.111</td>
+<td>0.050</td>
+<td>0.9979</td>
+<td>1.0021</td>
+<td>0.950</td>
+<td>0.9021</td>
+<td>1.1085</td>
+</tr>
+<tr>
+<td>43.172</td>
+<td>0.010</td>
+<td>0.5810</td>
+<td>1.7212</td>
+<td>0.990</td>
+<td>0.9013</td>
+<td>1.1095</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Grand profit factor</strong>: 1.104
+<strong>Optimal long threshold</strong>: -30.2718, profit factor = 1.189
+<strong>Optimal short threshold</strong>: 29.0207, profit factor = 1.055</p>
+<p><strong>P-values</strong>: Long=0.010, Unbiased Long=0.020
+<strong>P-values</strong>: Short=0.000, Unbiased Short=0.010</p>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+
+<h3 id="cmma_200_1_5">cmma_200_1_5</h3>
+<table>
+<thead>
+<tr>
+<th>Threshold</th>
+<th>Frac Gtr/Eq</th>
+<th>Long PF</th>
+<th>Short PF</th>
+<th>Frac Less</th>
+<th>Short PF</th>
+<th>Long PF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-42.247</td>
+<td>0.990</td>
+<td>1.0950</td>
+<td>0.9132</td>
+<td>0.010</td>
+<td>0.7645</td>
+<td>1.3081</td>
+</tr>
+<tr>
+<td>-27.866</td>
+<td>0.950</td>
+<td>1.1019</td>
+<td>0.9075</td>
+<td>0.050</td>
+<td>0.8918</td>
+<td>1.1213</td>
+</tr>
+<tr>
+<td>-17.106</td>
+<td>0.900</td>
+<td>1.1044</td>
+<td>0.9054</td>
+<td>0.100</td>
+<td>0.9052</td>
+<td>1.1047</td>
+</tr>
+<tr>
+<td>-2.776</td>
+<td>0.800</td>
+<td>1.1293</td>
+<td>0.8855</td>
+<td>0.200</td>
+<td>0.9430</td>
+<td>1.0605</td>
+</tr>
+<tr>
+<td>3.990</td>
+<td>0.700</td>
+<td>1.1528</td>
+<td>0.8675</td>
+<td>0.300</td>
+<td>0.9553</td>
+<td>1.0468</td>
+</tr>
+<tr>
+<td>12.330</td>
+<td>0.600</td>
+<td>1.1263</td>
+<td>0.8878</td>
+<td>0.400</td>
+<td>0.9204</td>
+<td>1.0865</td>
+</tr>
+<tr>
+<td>18.814</td>
+<td>0.500</td>
+<td>1.1271</td>
+<td>0.8872</td>
+<td>0.500</td>
+<td>0.9162</td>
+<td>1.0915</td>
+</tr>
+<tr>
+<td>23.865</td>
+<td>0.400</td>
+<td>1.1234</td>
+<td>0.8902</td>
+<td>0.600</td>
+<td>0.9116</td>
+<td>1.0970</td>
+</tr>
+<tr>
+<td>28.386</td>
+<td>0.300</td>
+<td>1.1008</td>
+<td>0.9085</td>
+<td>0.700</td>
+<td>0.9046</td>
+<td>1.1055</td>
+</tr>
+<tr>
+<td>32.299</td>
+<td>0.200</td>
+<td>1.0490</td>
+<td>0.9533</td>
+<td>0.800</td>
+<td>0.8981</td>
+<td>1.1134</td>
+</tr>
+<tr>
+<td>36.920</td>
+<td>0.100</td>
+<td>1.0199</td>
+<td>0.9805</td>
+<td>0.900</td>
+<td>0.9000</td>
+<td>1.1111</td>
+</tr>
+<tr>
+<td>39.933</td>
+<td>0.050</td>
+<td>1.0653</td>
+<td>0.9387</td>
+<td>0.950</td>
+<td>0.9042</td>
+<td>1.1060</td>
+</tr>
+<tr>
+<td>45.329</td>
+<td>0.010</td>
+<td>1.1030</td>
+<td>0.9066</td>
+<td>0.990</td>
+<td>0.9054</td>
+<td>1.1045</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Grand profit factor</strong>: 1.104
+<strong>Optimal long threshold</strong>: 4.8030, profit factor = 1.163
+<strong>Optimal short threshold</strong>: 38.9654, profit factor = 1.088</p>
+<p><strong>P-values</strong>: Long=0.010, Unbiased Long=0.020
+<strong>P-values</strong>: Short=0.000, Unbiased Short=0.010</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2023 Hunt Gather Trade. All rights reserved.
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://x.com/huntgathertrade" target="_blank" rel="noopener" title="x.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/larrykann" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/kanncommalarry/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>

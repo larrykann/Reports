@@ -196,21 +196,21 @@ _*benchmark strategies are not included in combined stats_
 ## Visualizations
 
 
-![TWEQ](Reports/docs/Strategy11/images/graph2.png)
+![TWEQ](images/graph2.png)
 
-![Drawdown](Reports/docs/Strategy11/images/graph3.png)
+![Drawdown](images/graph3.png)
 <div style="page-break-after: always;"></div>
 ![Daily](images/graph5.png)
 
-![Monthly](Reports/docs/Strategy11/images/graph7.png)
+![Monthly](images/graph7.png)
 <div style="page-break-after: always;"></div>
 ### Trade Plots
 
 
-![Individual %Gains](Reports/docs/Strategy11/images/plot0.png)
+![Individual %Gains](images/plot0.png)
 
 
-![Distribution of %Gains](Reports/docs/Strategy11/images/plot1.png)
+![Distribution of %Gains](images/plot1.png)
 <div style="page-break-after: always;"></div>
 ![Distribution of %Excursions](images/plot2.png)
 
@@ -230,6 +230,6 @@ _*benchmark strategies are not included in combined stats_
 | **backtest**   | **770.37%**     | **22.59%**   | **-27.12%**         |
 
 
-![MCPT Prodfit](Reports/docs/Strategy11/images/plot4.png)
-![MCPT Prodfit](Reports/docs/Strategy11/images/plot5.png)
+![MCPT Prodfit](images/plot4.png)
+![MCPT Prodfit](images/plot5.png)
 
