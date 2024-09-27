@@ -31,6 +31,8 @@ At least, that is what this report usually does. In this particular report, the 
 
 Interestingly enough though, the mutual information test and the optimization tables show us if there any predictive power in the returns against the returns of SPY. The results are interesting.
 
+Data sourced from Norgate Data.
+
 
 ![&VX_CCB](images/&VX_CCB.png)
 
