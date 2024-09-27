@@ -9,7 +9,7 @@ author: Larry Kann
 
 # Strategy 11D
 
-A mean reversion strategy that uses the Stochastic indicator to time entries and exits. The strategy includes a liquidity filter and uses short timeframe EMAs for trend confirmation. This variation uses dynamic sizing and a weekly rebalance instead of the more tradtional apporach of closing
+A mean reversion strategy that uses the Stochastic indicator to time entries and exits. The strategy includes a liquidity filter and uses short timeframe EMAs for trend confirmation. This variation uses dynamic sizing and a weekly rebalance instead of the more traditional approach of closing
 
 This file will be updated for as long as the strategy is being developed, deployed (live or simulation), or distributed. Once it has been discontinued, it will be noted here. The code block will always reflect the most recent version of the strategy. The change log can be used to see changes and adjustments to the code over time.
 

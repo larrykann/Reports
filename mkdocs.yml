@@ -7,6 +7,8 @@ nav:
       - Strategy10: Strategy10/strategy10.md
       - Strategy11: Strategy11/strategy11.md
       - Strategy11D: Strategy11D/strategy11d.md
+  - Feature Reports:
+     - VIX and SPX Products: IndicatorReports/VIX_Related_Products/VIX_Related_Products.md
 
 theme:
   name: material
