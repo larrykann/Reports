@@ -8,22 +8,21 @@ Interestingly enough though, the mutual information test and the optimization ta
 
 Data sourced from Norgate Data.
 
-![&VX_CCB](C:\Users\kannd\Documents\cyberBrain\IndicatorReports\VIX_Related_Products\images\&VX_CCB.png)
+![&VX_CCB](images/&VX_CCB.png)
 
-![&ES_CCB](C:\Users\kannd\Documents\cyberBrain\IndicatorReports\VIX_Related_Products\images\&ES_CCB.png)
+![&ES_CCB](images/&ES_CCB.png)
 
-![VXX](C:\Users\kannd\Documents\cyberBrain\IndicatorReports\VIX_Related_Products\images\VXX.png)
+![VXX](images/VXX.png)
 
-![UVXY](C:\Users\kannd\Documents\cyberBrain\IndicatorReports\VIX_Related_Products\images\UVXY.png)
+![UVXY](images/UVXY.png)
 
-![SVXY](C:\Users\kannd\Documents\cyberBrain\IndicatorReports\VIX_Related_Products\images\SVXY.png)
+![SVXY](images/SVXY.png)
 
-![VIX](C:\Users\kannd\Documents\cyberBrain\IndicatorReports\VIX_Related_Products\images\VIX.png)
+![VIX](images/VIX.png)
 
-![VIX_zscore](C:\Users\kannd\Documents\cyberBrain\IndicatorReports\VIX_Related_Products\images\VIX_zscore.png)
+![VIX_zscore](images/VIX_zscore.png)
 
-
-![SPY_Log_Returns](C:\Users\kannd\Documents\cyberBrain\IndicatorReports\VIX_Related_Products\images\SPY_Log_Returns.png)
+![SPY_Log_Returns](images/SPY_Log_Returns.png)
 
 ## Simple Statistics and Relative Entropy Report
 
