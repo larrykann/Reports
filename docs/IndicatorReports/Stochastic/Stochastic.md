@@ -1,14 +1,12 @@
 # Indicator Soundness Report Stochastic
 The generated report provides a comprehensive analysis of trading indicators, offering insights into their statistical properties, predictive power, mean stability over time, and optimal thresholds for profitability. It combines detailed statistical summaries, mutual information scores, mean break tests, and profit factor evaluations.
-![Stochastic_0](C:\Users\kannd\Documents\cyberBrain\IndicatorReports\Stochastic\images\Stochastic_0.png)
+![Stochastic_0](images/Stochastic_0.png)
 
-![Stochastic_1](C:\Users\kannd\Documents\cyberBrain\IndicatorReports\Stochastic\images\Stochastic_1.png)
+![Stochastic_1](images/Stochastic_1.png)
 
-![Stochastic_2](C:\Users\kannd\Documents\cyberBrain\IndicatorReports\Stochastic\images\Stochastic_2.png)
+![Stochastic_2](images/Stochastic_2.png)
 
-![Date](C:\Users\kannd\Documents\cyberBrain\IndicatorReports\Stochastic\images\Date.png)
-
-![Log_Returns](C:\Users\kannd\Documents\cyberBrain\IndicatorReports\Stochastic\images\Log_Returns.png)
+![Log_Returns](images/Log_Returns.png)
 
 ## Simple Statistics and Relative Entropy Report
 

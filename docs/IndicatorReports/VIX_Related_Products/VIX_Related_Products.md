@@ -1,30 +1,5 @@
----
-aliases: []
-tags: []
-title: Close Minus Moving Average
-author: Larry Kann
-titlepage: true
-titlepage-rule-color: "336600"
-titlepage-text-color: "000000"
-colorlinks: "ff0d8a"
-toc: true
-toc-own-page: true
-mainfont: Arial
-monofont: Dank Mono
-linkcolor: magenta
-urlcolor: magenta
-listings-no-page-break: true
-code-block-font-size: \scriptsize
-output:
-  pdf:
-    pdf-engine: xelatex
-    output: CMMA_20240730_170617.pdf
-    from: markdown
-    template: eisvogel
-    listings: true
----
-
 # Indicator Soundness Report VIX_Related_Products
+
 The generated report provides a comprehensive analysis of trading indicators, offering insights into their statistical properties, predictive power, mean stability over time, and optimal thresholds for profitability. It combines detailed statistical summaries, mutual information scores, mean break tests, and profit factor evaluations.
 
 At least, that is what this report usually does. In this particular report, the only "indicator" is the VIX. Everything else are the log returns of SPY and VIX products. The tests that we are most concerned with are the basic statistics, the mean break test, and the eyeball test (look at the charts). We are checking to make sure that the products that we intend to trade are, themselves, stationary. This report does show that, for the most part. The VIX indicator has not been normalized at all, in order to asses it in it's raw form.
@@ -33,23 +8,22 @@ Interestingly enough though, the mutual information test and the optimization ta
 
 Data sourced from Norgate Data.
 
+![&VX_CCB](C:\Users\kannd\Documents\cyberBrain\IndicatorReports\VIX_Related_Products\images\&VX_CCB.png)
 
-![&VX_CCB](images/&VX_CCB.png)
+![&ES_CCB](C:\Users\kannd\Documents\cyberBrain\IndicatorReports\VIX_Related_Products\images\&ES_CCB.png)
 
-![SPY](images/SPY.png)
+![VXX](C:\Users\kannd\Documents\cyberBrain\IndicatorReports\VIX_Related_Products\images\VXX.png)
 
-![&ES_CCB](images/&ES_CCB.png)
+![UVXY](C:\Users\kannd\Documents\cyberBrain\IndicatorReports\VIX_Related_Products\images\UVXY.png)
 
-![VXX](images/VXX.png)
+![SVXY](C:\Users\kannd\Documents\cyberBrain\IndicatorReports\VIX_Related_Products\images\SVXY.png)
 
-![UVXY](images/UVXY.png)
+![VIX](C:\Users\kannd\Documents\cyberBrain\IndicatorReports\VIX_Related_Products\images\VIX.png)
 
-![SVXY](images/SVXY.png)
-
-![VIX](images/VIX.png)
+![VIX_zscore](C:\Users\kannd\Documents\cyberBrain\IndicatorReports\VIX_Related_Products\images\VIX_zscore.png)
 
 
-![SPY_Log_Returns](images/SPY_Log_Returns.png)
+![SPY_Log_Returns](C:\Users\kannd\Documents\cyberBrain\IndicatorReports\VIX_Related_Products\images\SPY_Log_Returns.png)
 
 ## Simple Statistics and Relative Entropy Report
 
@@ -64,13 +38,13 @@ The Simple Statistics Table summarizes key metrics for each trading indicator, i
 
 | Indicator           | Ncases | Mean           | Min            | Max            | IQR            | rnq/IQR        | Relative Entropy    |
 |---------------------|--------|----------------|----------------|----------------|----------------|----------------|---------------------|
-| &VX_CCB             | 1679   | -0.0011        | -0.2097        | 0.3656         | 0.0150         | 38.2873        | 0.2016              |
-| SPY                 | 1679   | 0.0005         | -0.1159        | 0.0867         | 0.0114         | 17.7881        | 0.4153              |
-| &ES_CCB             | 1679   | 0.0004         | -0.0968        | 0.0812         | 0.0107         | 16.6545        | 0.4015              |
-| VXX                 | 1679   | -0.0021        | -0.2137        | 0.3308         | 0.0425         | 12.8167        | 0.5141              |
-| UVXY                | 1679   | -0.0041        | -0.4072        | 0.5081         | 0.0664         | 13.7932        | 0.4799              |
-| SVXY                | 1679   | -0.0010        | -1.7695        | 0.1254         | 0.0222         | 85.2501        | 0.0503              |
-| VIX                 | 1679   | 20.0516        | 10.8500        | 82.6900        | 8.5150         | 8.4369         | 0.5266              |
+| &VX_CCB             | 1654   | -0.0011        | -0.2097        | 0.3656         | 0.0152         | 37.8184        | 0.2017              |
+| &ES_CCB             | 1654   | 0.0004         | -0.0968        | 0.0812         | 0.0105         | 16.8981        | 0.3975              |
+| VXX                 | 1654   | -0.0024        | -0.2137        | 0.3308         | 0.0422         | 12.8908        | 0.5090              |
+| UVXY                | 1654   | -0.0044        | -0.3338        | 0.4593         | 0.0651         | 12.1764        | 0.5273              |
+| SVXY                | 1654   | 0.0004         | -0.2412        | 0.0929         | 0.0218         | 15.3234        | 0.4301              |
+| VIX                 | 1654   | 20.0486        | 10.8500        | 82.6900        | 8.5025         | 8.4493         | 0.5259              |
+| VIX_zscore          | 1654   | -0.0406        | -2.3610        | 4.7562         | 1.7876         | 3.9814         | 0.8255              |
 ## Mutual Information Report
 
 High MI scores indicate a strong relationship between the indicator and the target variable, suggesting potential predictive power. Low p-values further validate the indicator's statistical significance.
@@ -81,13 +55,13 @@ High MI scores indicate a strong relationship between the indicator and the targ
 
 | Indicator           | Target              | MI Score            | Solo p-value        | Unbiased p-value    |
 |---------------------|---------------------|---------------------|---------------------|---------------------|
-| &VX_CCB            | SPY_Log_Returns    | 0.1499              | 0.0000              | 0.0010              |
-| SPY                | SPY_Log_Returns    | 0.8617              | 0.0000              | 0.0010              |
-| &ES_CCB            | SPY_Log_Returns    | 0.6345              | 0.0000              | 0.0010              |
-| VXX                | SPY_Log_Returns    | 0.3108              | 0.0000              | 0.0010              |
-| UVXY               | SPY_Log_Returns    | 0.3457              | 0.0000              | 0.0010              |
-| SVXY               | SPY_Log_Returns    | 0.0635              | 0.0000              | 0.0010              |
-| VIX                | SPY_Log_Returns    | 0.1538              | 0.0000              | 0.0010              |
+| &VX_CCB            | SPY_Log_Returns    | 0.1468              | 0.0000              | 0.0010              |
+| &ES_CCB            | SPY_Log_Returns    | 0.6328              | 0.0000              | 0.0010              |
+| VXX                | SPY_Log_Returns    | 0.3075              | 0.0000              | 0.0010              |
+| UVXY               | SPY_Log_Returns    | 0.3348              | 0.0000              | 0.0010              |
+| SVXY               | SPY_Log_Returns    | 0.3118              | 0.0000              | 0.0010              |
+| VIX                | SPY_Log_Returns    | 0.1549              | 0.0000              | 0.0010              |
+| VIX_zscore         | SPY_Log_Returns    | 0.1250              | 0.0000              | 0.0010              |
 
 ## Serial Correlated Mean Break Test Report
 
@@ -100,13 +74,13 @@ The Serial Correlated Mean Break Test Report identifies potential breaks in the 
 
 | Indicator           | n_recent | z(U)     | Solo p-value | Unbiased p-value |
 |---------------------|----------|----------|--------------|-----------------|
-| &VX_CCB             | 2500.0   | 29.6941  | 0.1400       | 0.1810          |
-| SPY                 | 2500.0   | 29.6940  | 0.7730       | 0.1810          |
-| &ES_CCB             | 2500.0   | 29.6940  | 0.9120       | 0.1810          |
-| VXX                 | 2500.0   | 29.6941  | 0.3980       | 0.1810          |
-| UVXY                | 2500.0   | 29.6943  | 0.1330       | 0.1810          |
-| SVXY                | 2500.0   | 29.6940  | 0.7180       | 0.1810          |
-| VIX                 | 2500.0   | 28.9626  | 0.9990       | 0.1810          |
+| &VX_CCB             | 2500.0   | 29.7336  | 0.1290       | 0.8150          |
+| &ES_CCB             | 2500.0   | 29.7335  | 0.7290       | 0.8150          |
+| VXX                 | 2500.0   | 29.7334  | 0.9850       | 0.8150          |
+| UVXY                | 2500.0   | 29.7335  | 0.9210       | 0.8150          |
+| SVXY                | 2500.0   | 29.7335  | 0.6400       | 0.8150          |
+| VIX                 | 2500.0   | 28.9890  | 0.9980       | 0.8150          |
+| VIX_zscore          | 2500.0   | 29.7330  | 0.8520       | 0.8150          |
 
 ## Optimal Thresholds w/ Profit Factor Report
 
@@ -116,26 +90,23 @@ The Optimal Thresholds w/ Profit Factor Report evaluates various threshold level
 
 | Threshold | Frac Gtr/Eq | Long PF    | Short PF   | Frac Less | Short PF   | Long PF    |
 |-----------|-------------|------------|------------|-----------|------------|------------|
-|   -0.052 |      0.990 |       1.1131 |       0.8984 |         0.010 |       0.4615 |       2.1670 |
-|   -0.028 |      0.951 |       1.1334 |       0.8823 |         0.049 |       1.0159 |       0.9844 |
-|   -0.021 |      0.901 |       1.1703 |       0.8545 |         0.099 |       1.1765 |       0.8500 |
-|   -0.013 |      0.800 |       1.1517 |       0.8683 |         0.200 |       0.9676 |       1.0334 |
-|   -0.008 |      0.700 |       1.1386 |       0.8782 |         0.300 |       0.9160 |       1.0916 |
-|   -0.005 |      0.600 |       1.1016 |       0.9078 |         0.400 |       0.8651 |       1.1559 |
-|   -0.003 |      0.500 |       1.1117 |       0.8995 |         0.500 |       0.8801 |       1.1362 |
-|    0.000 |      0.401 |       1.1123 |       0.8990 |         0.599 |       0.8835 |       1.1319 |
-|    0.003 |      0.300 |       1.1787 |       0.8484 |         0.700 |       0.9128 |       1.0955 |
-|    0.008 |      0.200 |       1.1557 |       0.8653 |         0.800 |       0.8991 |       1.1122 |
-|    0.018 |      0.100 |       1.0904 |       0.9171 |         0.900 |       0.8856 |       1.1291 |
-|    0.032 |      0.050 |       1.0074 |       0.9927 |         0.950 |       0.8817 |       1.1341 |
-|    0.073 |      0.010 |       3.4763 |       0.2877 |         0.990 |       0.9131 |       1.0952 |
+|   -0.052 |      0.990 |       1.1205 |       0.8924 |         0.010 |       0.4149 |       2.4100 |
+|   -0.028 |      0.950 |       1.1422 |       0.8755 |         0.050 |       1.0034 |       0.9966 |
+|   -0.021 |      0.900 |       1.1845 |       0.8442 |         0.100 |       1.1930 |       0.8382 |
+|   -0.013 |      0.800 |       1.1659 |       0.8577 |         0.200 |       0.9731 |       1.0276 |
+|   -0.008 |      0.700 |       1.1655 |       0.8580 |         0.300 |       0.9380 |       1.0661 |
+|   -0.005 |      0.600 |       1.1331 |       0.8825 |         0.400 |       0.8842 |       1.1310 |
+|   -0.003 |      0.500 |       1.1380 |       0.8787 |         0.500 |       0.8882 |       1.1259 |
+|   -0.000 |      0.400 |       1.1332 |       0.8825 |         0.600 |       0.8838 |       1.1315 |
+|    0.003 |      0.300 |       1.2099 |       0.8265 |         0.700 |       0.9140 |       1.0941 |
+|    0.008 |      0.200 |       1.1923 |       0.8387 |         0.800 |       0.8991 |       1.1122 |
+|    0.018 |      0.100 |       1.0727 |       0.9323 |         0.900 |       0.8752 |       1.1426 |
+|    0.033 |      0.050 |       0.9738 |       1.0269 |         0.950 |       0.8717 |       1.1471 |
+|    0.073 |      0.010 |       3.2237 |       0.3102 |         0.990 |       0.9037 |       1.1066 |
 
-**Grand profit factor**: 1.123
-**Optimal long threshold**: 0.0035, profit factor = 1.215
-**Optimal short threshold**: -0.0254, profit factor = 1.306
-
-**P-values**: Long=0.999, Unbiased Long=0.999
-**P-values**: Short=0.000, Unbiased Short=0.001
+**Grand profit factor**: 1.132
+**Optimal long threshold**: 0.0035, profit factor = 1.250
+**Optimal short threshold**: -0.0254, profit factor = 1.296
 
 ### SPY vs SPY_Log_Returns
 
@@ -170,35 +141,29 @@ In plain words, enter long when the previous days log returns is greater than 1.
 **Optimal long threshold**: -0.0189, profit factor = 1.720
 **Optimal short threshold**: 0.0168, profit factor = 2.205
 
-**P-values**: Long=0.999, Unbiased Long=0.999
-**P-values**: Short=0.000, Unbiased Short=0.001
-
 ### &ES_CCB vs SPY_Log_Returns
 
-This is just cool. Using the the returns of the SPY futures contract (ES) to predict the returns of SPY the next day. Much like the Spy v. Spy comparison, this one shows long profitability on SPY when the returns of ES are largely negative and vice versa for shorts. Those are not nominal profit factors either, if they are to be trusted.
+This is just cool. Using the the returns of the SPY futures contract (ES) to predict the returns of SPY the next day. Much like the Spy v. Spy comparison, this one shows long profitability on SPY when the returns of ES are largely negative and vice versa for shorts. Those are not nominal profit factors either, if they are to be trusted
 
 | Threshold | Frac Gtr/Eq | Long PF    | Short PF   | Frac Less | Short PF   | Long PF    |
 |-----------|-------------|------------|------------|-----------|------------|------------|
-|   -0.032 |      0.990 |       1.1123 |       0.8991 |         0.010 |       0.6485 |       1.5420 |
-|   -0.017 |      0.951 |       1.0854 |       0.9213 |         0.049 |       0.6523 |       1.5331 |
-|   -0.012 |      0.901 |       1.1113 |       0.8999 |         0.099 |       0.8430 |       1.1862 |
-|   -0.006 |      0.800 |       1.1254 |       0.8885 |         0.200 |       0.8945 |       1.1179 |
-|   -0.003 |      0.700 |       1.0965 |       0.9120 |         0.300 |       0.8574 |       1.1664 |
-|   -0.001 |      0.600 |       1.1182 |       0.8943 |         0.400 |       0.8859 |       1.1288 |
-|    0.001 |      0.500 |       1.1141 |       0.8976 |         0.500 |       0.8846 |       1.1305 |
-|    0.002 |      0.400 |       1.0761 |       0.9292 |         0.600 |       0.8686 |       1.1513 |
-|    0.005 |      0.300 |       0.9955 |       1.0046 |         0.700 |       0.8468 |       1.1809 |
-|    0.008 |      0.200 |       0.8412 |       1.1887 |         0.800 |       0.8219 |       1.2167 |
-|    0.012 |      0.100 |       0.6351 |       1.5747 |         0.900 |       0.8199 |       1.2196 |
-|    0.015 |      0.050 |       0.4667 |       2.1429 |         0.950 |       0.8262 |       1.2104 |
-|    0.027 |      0.010 |       0.1613 |       6.1990 |         0.990 |       0.8494 |       1.1772 |
+|   -0.031 |      0.990 |       1.1220 |       0.8912 |         0.010 |       0.6628 |       1.5088 |
+|   -0.017 |      0.950 |       1.0968 |       0.9117 |         0.050 |       0.6589 |       1.5176 |
+|   -0.011 |      0.900 |       1.1263 |       0.8878 |         0.100 |       0.8602 |       1.1625 |
+|   -0.006 |      0.800 |       1.1184 |       0.8942 |         0.200 |       0.8559 |       1.1683 |
+|   -0.003 |      0.700 |       1.0908 |       0.9168 |         0.300 |       0.8330 |       1.2005 |
+|   -0.001 |      0.600 |       1.1073 |       0.9031 |         0.400 |       0.8622 |       1.1599 |
+|    0.001 |      0.500 |       1.0855 |       0.9212 |         0.500 |       0.8544 |       1.1704 |
+|    0.002 |      0.400 |       1.0459 |       0.9561 |         0.600 |       0.8436 |       1.1854 |
+|    0.005 |      0.300 |       0.9832 |       1.0171 |         0.700 |       0.8325 |       1.2012 |
+|    0.008 |      0.200 |       0.8190 |       1.2209 |         0.800 |       0.8073 |       1.2387 |
+|    0.012 |      0.100 |       0.6257 |       1.5982 |         0.900 |       0.8098 |       1.2349 |
+|    0.015 |      0.050 |       0.4700 |       2.1277 |         0.950 |       0.8184 |       1.2220 |
+|    0.027 |      0.010 |       0.1482 |       6.7470 |         0.990 |       0.8373 |       1.1942 |
 
-**Grand profit factor**: 1.123
-**Optimal long threshold**: -0.0173, profit factor = 1.533
-**Optimal short threshold**: 0.0150, profit factor = 2.162
-
-**P-values**: Long=0.999, Unbiased Long=0.999
-**P-values**: Short=0.000, Unbiased Short=0.001
+**Grand profit factor**: 1.132
+**Optimal long threshold**: -0.0166, profit factor = 1.563
+**Optimal short threshold**: 0.0150, profit factor = 2.147
 
 ### VXX vs SPY_Log_Returns
 
@@ -206,23 +171,23 @@ Compared to the VX futures contract table, the VXX seems to have a better abilit
 
 | Threshold | Frac Gtr/Eq | Long PF    | Short PF   | Frac Less | Short PF   | Long PF    |
 |-----------|-------------|------------|------------|-----------|------------|------------|
-|   -0.092 |      0.990 |       1.1180 |       0.8944 |         0.010 |       0.7069 |       1.4145 |
-|   -0.061 |      0.951 |       1.1664 |       0.8573 |         0.049 |       1.4208 |       0.7038 |
-|   -0.046 |      0.901 |       1.1759 |       0.8504 |         0.099 |       1.2201 |       0.8196 |
-|   -0.033 |      0.800 |       1.1714 |       0.8537 |         0.200 |       1.0348 |       0.9664 |
-|   -0.023 |      0.700 |       1.1510 |       0.8688 |         0.300 |       0.9424 |       1.0611 |
-|   -0.016 |      0.600 |       1.1498 |       0.8697 |         0.400 |       0.9224 |       1.0842 |
-|   -0.008 |      0.500 |       1.0775 |       0.9281 |         0.500 |       0.8519 |       1.1739 |
-|    0.001 |      0.400 |       1.0768 |       0.9286 |         0.600 |       0.8613 |       1.1610 |
-|    0.009 |      0.300 |       1.1552 |       0.8657 |         0.700 |       0.9034 |       1.1069 |
-|    0.023 |      0.200 |       1.1608 |       0.8614 |         0.800 |       0.9005 |       1.1104 |
-|    0.047 |      0.100 |       1.2985 |       0.7701 |         0.900 |       0.9130 |       1.0953 |
-|    0.077 |      0.050 |       1.3078 |       0.7647 |         0.950 |       0.9040 |       1.1062 |
-|    0.150 |      0.010 |       3.0514 |       0.3277 |         0.990 |       0.9121 |       1.0963 |
+|   -0.091 |      0.990 |       1.1579 |       0.8637 |         0.010 |       1.8967 |       0.5272 |
+|   -0.060 |      0.950 |       1.1911 |       0.8395 |         0.050 |       1.6457 |       0.6077 |
+|   -0.046 |      0.900 |       1.1932 |       0.8381 |         0.100 |       1.2693 |       0.7878 |
+|   -0.033 |      0.800 |       1.1903 |       0.8401 |         0.200 |       1.0564 |       0.9466 |
+|   -0.023 |      0.700 |       1.1746 |       0.8514 |         0.300 |       0.9617 |       1.0399 |
+|   -0.016 |      0.600 |       1.1724 |       0.8529 |         0.400 |       0.9309 |       1.0742 |
+|   -0.008 |      0.500 |       1.1129 |       0.8986 |         0.500 |       0.8674 |       1.1529 |
+|    0.000 |      0.400 |       1.1192 |       0.8935 |         0.600 |       0.8754 |       1.1424 |
+|    0.009 |      0.300 |       1.2166 |       0.8219 |         0.700 |       0.9165 |       1.0911 |
+|    0.022 |      0.200 |       1.2428 |       0.8046 |         0.800 |       0.9117 |       1.0968 |
+|    0.046 |      0.100 |       1.3461 |       0.7429 |         0.900 |       0.9096 |       1.0994 |
+|    0.075 |      0.050 |       1.3269 |       0.7536 |         0.950 |       0.8970 |       1.1149 |
+|    0.148 |      0.010 |       2.1499 |       0.4651 |         0.990 |       0.8976 |       1.1140 |
 
-**Grand profit factor**: 1.123
-**Optimal long threshold**: 0.0628, profit factor = 1.410
-**Optimal short threshold**: -0.0594, profit factor = 1.507
+**Grand profit factor**: 1.132
+**Optimal long threshold**: 0.0628, profit factor = 1.498
+**Optimal short threshold**: -0.0594, profit factor = 1.655
 
 **P-values**: Long=0.999, Unbiased Long=0.999
 **P-values**: Short=0.000, Unbiased Short=0.001
@@ -233,23 +198,23 @@ The short profit factor here might be worth looking into.
 
 | Threshold | Frac Gtr/Eq | Long PF    | Short PF   | Frac Less | Short PF   | Long PF    |
 |-----------|-------------|------------|------------|-----------|------------|------------|
-|   -0.140 |      0.990 |       1.1167 |       0.8955 |         0.010 |       0.6694 |       1.4938 |
-|   -0.092 |      0.951 |       1.1750 |       0.8510 |         0.049 |       1.5660 |       0.6386 |
-|   -0.073 |      0.901 |       1.1837 |       0.8448 |         0.099 |       1.2807 |       0.7808 |
-|   -0.050 |      0.800 |       1.1693 |       0.8552 |         0.200 |       1.0271 |       0.9736 |
-|   -0.035 |      0.700 |       1.1367 |       0.8798 |         0.300 |       0.9140 |       1.0941 |
-|   -0.024 |      0.600 |       1.1658 |       0.8578 |         0.400 |       0.9404 |       1.0634 |
-|   -0.012 |      0.500 |       1.1418 |       0.8758 |         0.500 |       0.9057 |       1.1041 |
-|   -0.000 |      0.400 |       1.1667 |       0.8571 |         0.600 |       0.9166 |       1.0910 |
-|    0.014 |      0.300 |       1.1225 |       0.8908 |         0.700 |       0.8899 |       1.1237 |
-|    0.034 |      0.200 |       1.1099 |       0.9010 |         0.800 |       0.8864 |       1.1281 |
-|    0.071 |      0.100 |       1.0406 |       0.9609 |         0.900 |       0.8785 |       1.1383 |
-|    0.119 |      0.050 |       1.0542 |       0.9486 |         0.950 |       0.8847 |       1.1304 |
-|    0.222 |      0.010 |       2.4484 |       0.4084 |         0.990 |       0.9090 |       1.1001 |
+|   -0.137 |      0.990 |       1.1352 |       0.8809 |         0.010 |       0.9912 |       1.0089 |
+|   -0.092 |      0.950 |       1.1978 |       0.8349 |         0.050 |       1.7694 |       0.5652 |
+|   -0.071 |      0.900 |       1.2081 |       0.8277 |         0.100 |       1.3785 |       0.7254 |
+|   -0.050 |      0.800 |       1.1817 |       0.8463 |         0.200 |       1.0277 |       0.9731 |
+|   -0.035 |      0.700 |       1.1584 |       0.8633 |         0.300 |       0.9288 |       1.0766 |
+|   -0.024 |      0.600 |       1.1899 |       0.8404 |         0.400 |       0.9496 |       1.0531 |
+|   -0.012 |      0.500 |       1.1722 |       0.8531 |         0.500 |       0.9156 |       1.0922 |
+|   -0.000 |      0.400 |       1.2115 |       0.8254 |         0.600 |       0.9296 |       1.0757 |
+|    0.014 |      0.300 |       1.1703 |       0.8545 |         0.700 |       0.8987 |       1.1127 |
+|    0.033 |      0.200 |       1.1710 |       0.8540 |         0.800 |       0.8937 |       1.1189 |
+|    0.070 |      0.100 |       1.1497 |       0.8698 |         0.900 |       0.8855 |       1.1293 |
+|    0.115 |      0.050 |       1.2921 |       0.7739 |         0.950 |       0.8944 |       1.1180 |
+|    0.211 |      0.010 |       2.3763 |       0.4208 |         0.990 |       0.8992 |       1.1121 |
 
-**Grand profit factor**: 1.123
-**Optimal long threshold**: 0.0956, profit factor = 1.221
-**Optimal short threshold**: -0.0918, profit factor = 1.653
+**Grand profit factor**: 1.132
+**Optimal long threshold**: 0.1083, profit factor = 1.372
+**Optimal short threshold**: -0.0917, profit factor = 1.769
 
 **P-values**: Long=0.999, Unbiased Long=0.999
 **P-values**: Short=0.000, Unbiased Short=0.001
@@ -260,23 +225,23 @@ Another short possibility to examine.
 
 | Threshold | Frac Gtr/Eq | Long PF    | Short PF   | Frac Less | Short PF   | Long PF    |
 |-----------|-------------|------------|------------|-----------|------------|------------|
-|   -0.092 |      0.990 |       1.1034 |       0.9063 |         0.010 |       0.4582 |       2.1823 |
-|   -0.043 |      0.951 |       1.1243 |       0.8894 |         0.049 |       0.8991 |       1.1122 |
-|   -0.026 |      0.901 |       1.1184 |       0.8941 |         0.099 |       0.8674 |       1.1528 |
-|   -0.012 |      0.800 |       1.1523 |       0.8678 |         0.200 |       0.9571 |       1.0448 |
-|   -0.005 |      0.700 |       1.1122 |       0.8991 |         0.300 |       0.8737 |       1.1446 |
-|   -0.000 |      0.600 |       1.0614 |       0.9421 |         0.400 |       0.8257 |       1.2110 |
-|    0.004 |      0.500 |       1.0816 |       0.9245 |         0.500 |       0.8586 |       1.1646 |
-|    0.008 |      0.400 |       1.0716 |       0.9332 |         0.600 |       0.8625 |       1.1594 |
-|    0.012 |      0.300 |       1.0677 |       0.9366 |         0.700 |       0.8695 |       1.1500 |
-|    0.017 |      0.200 |       1.0484 |       0.9539 |         0.800 |       0.8724 |       1.1462 |
-|    0.023 |      0.100 |       0.7713 |       1.2965 |         0.900 |       0.8428 |       1.1865 |
-|    0.030 |      0.050 |       0.6218 |       1.6083 |         0.950 |       0.8479 |       1.1794 |
-|    0.044 |      0.010 |       0.6363 |       1.5716 |         0.990 |       0.8755 |       1.1423 |
+|   -0.084 |      0.990 |       1.1114 |       0.8998 |         0.010 |       0.4033 |       2.4793 |
+|   -0.041 |      0.950 |       1.1230 |       0.8905 |         0.050 |       0.8079 |       1.2377 |
+|   -0.025 |      0.900 |       1.1218 |       0.8914 |         0.100 |       0.8361 |       1.1961 |
+|   -0.012 |      0.800 |       1.1479 |       0.8711 |         0.200 |       0.9190 |       1.0881 |
+|   -0.005 |      0.700 |       1.1079 |       0.9026 |         0.300 |       0.8474 |       1.1800 |
+|    0.000 |      0.601 |       1.0579 |       0.9452 |         0.399 |       0.8068 |       1.2395 |
+|    0.004 |      0.500 |       1.0825 |       0.9238 |         0.500 |       0.8461 |       1.1819 |
+|    0.008 |      0.400 |       1.0528 |       0.9498 |         0.600 |       0.8408 |       1.1893 |
+|    0.011 |      0.300 |       1.0395 |       0.9620 |         0.700 |       0.8486 |       1.1784 |
+|    0.016 |      0.200 |       1.0468 |       0.9553 |         0.800 |       0.8631 |       1.1585 |
+|    0.023 |      0.100 |       0.7215 |       1.3860 |         0.900 |       0.8252 |       1.2119 |
+|    0.029 |      0.050 |       0.6360 |       1.5724 |         0.950 |       0.8420 |       1.1876 |
+|    0.042 |      0.010 |       0.3782 |       2.6443 |         0.990 |       0.8541 |       1.1708 |
 
-**Grand profit factor**: 1.123
-**Optimal long threshold**: -0.0340, profit factor = 1.296
-**Optimal short threshold**: 0.0295, profit factor = 1.630
+**Grand profit factor**: 1.132
+**Optimal long threshold**: -0.0340, profit factor = 1.397
+**Optimal short threshold**: 0.0272, profit factor = 1.616
 
 **P-values**: Long=0.999, Unbiased Long=0.999
 **P-values**: Short=0.000, Unbiased Short=0.001
@@ -289,23 +254,50 @@ This possibly supports the use of the VIX as a filter for trade systems, especia
 
 | Threshold | Frac Gtr/Eq | Long PF    | Short PF   | Frac Less | Short PF   | Long PF    |
 |-----------|-------------|------------|------------|-----------|------------|------------|
-|   11.860 |      0.990 |       1.1241 |       0.8896 |         0.010 |       1.0596 |       0.9438 |
-|   12.420 |      0.952 |       1.1177 |       0.8947 |         0.048 |       0.6820 |       1.4663 |
-|   12.860 |      0.901 |       1.1103 |       0.9007 |         0.099 |       0.6689 |       1.4950 |
-|   13.840 |      0.802 |       1.0920 |       0.9158 |         0.198 |       0.6782 |       1.4746 |
-|   15.350 |      0.700 |       1.0774 |       0.9281 |         0.300 |       0.7170 |       1.3946 |
-|   16.660 |      0.600 |       1.0884 |       0.9188 |         0.400 |       0.8007 |       1.2489 |
-|   18.200 |      0.500 |       1.1339 |       0.8819 |         0.500 |       0.9086 |       1.1006 |
-|   19.950 |      0.400 |       1.1169 |       0.8953 |         0.600 |       0.8831 |       1.1324 |
-|   21.990 |      0.300 |       1.1482 |       0.8710 |         0.700 |       0.9091 |       1.0999 |
-|   24.830 |      0.200 |       1.1529 |       0.8674 |         0.800 |       0.9046 |       1.1054 |
-|   28.950 |      0.100 |       1.3046 |       0.7665 |         0.900 |       0.9310 |       1.0741 |
-|   32.610 |      0.050 |       1.3162 |       0.7598 |         0.950 |       0.9138 |       1.0944 |
-|   53.540 |      0.010 |       0.9316 |       1.0734 |         0.990 |       0.8797 |       1.1367 |
+|   11.980 |      0.990 |       1.1334 |       0.8823 |         0.010 |       1.1849 |       0.8440 |
+|   12.440 |      0.950 |       1.1245 |       0.8893 |         0.050 |       0.6200 |       1.6128 |
+|   12.860 |      0.901 |       1.1196 |       0.8932 |         0.099 |       0.6683 |       1.4964 |
+|   13.850 |      0.800 |       1.0965 |       0.9120 |         0.200 |       0.6491 |       1.5406 |
+|   15.370 |      0.700 |       1.0786 |       0.9272 |         0.300 |       0.6865 |       1.4566 |
+|   16.650 |      0.600 |       1.0903 |       0.9172 |         0.400 |       0.7778 |       1.2857 |
+|   18.140 |      0.501 |       1.1242 |       0.8895 |         0.499 |       0.8695 |       1.1501 |
+|   19.950 |      0.400 |       1.1125 |       0.8989 |         0.600 |       0.8610 |       1.1615 |
+|   21.970 |      0.301 |       1.1459 |       0.8727 |         0.699 |       0.8936 |       1.1191 |
+|   24.800 |      0.200 |       1.1493 |       0.8701 |         0.800 |       0.8914 |       1.1218 |
+|   28.870 |      0.100 |       1.2661 |       0.7898 |         0.900 |       0.9136 |       1.0945 |
+|   32.600 |      0.050 |       1.2987 |       0.7700 |         0.950 |       0.9037 |       1.1065 |
+|   53.540 |      0.010 |       0.9316 |       1.0734 |         0.990 |       0.8721 |       1.1467 |
 
-**Grand profit factor**: 1.123
-**Optimal long threshold**: 12.7800, profit factor = 1.685
-**Optimal short threshold**: 18.6300, profit factor = 0.952
+**Grand profit factor**: 1.132
+**Optimal long threshold**: 12.7800, profit factor = 1.695
+**Optimal short threshold**: 25.5400, profit factor = 0.931
 
 **P-values**: Long=0.999, Unbiased Long=0.999
 **P-values**: Short=1.000, Unbiased Short=1.000
+
+### VIX_zscore vs SPY_Log_Returns
+
+These results are much cleaner than the results above. We can see that there is a threshold level for profitable shorts now. The long threshold is probably more believable, as the z-score isn't as influenced by outlier (large) VIX values as much.
+
+| Threshold | Frac Gtr/Eq | Long PF    | Short PF   | Frac Less | Short PF   | Long PF    |
+|-----------|-------------|------------|------------|-----------|------------|------------|
+|   -1.961 |      0.990 |       1.1276 |       0.8868 |         0.010 |       0.4036 |       2.4780 |
+|   -1.600 |      0.950 |       1.1388 |       0.8781 |         0.050 |       1.0205 |       0.9799 |
+|   -1.408 |      0.900 |       1.1534 |       0.8670 |         0.100 |       1.1304 |       0.8846 |
+|   -1.139 |      0.800 |       1.1252 |       0.8887 |         0.200 |       0.8523 |       1.1733 |
+|   -0.903 |      0.700 |       1.0539 |       0.9488 |         0.300 |       0.6926 |       1.4438 |
+|   -0.680 |      0.600 |       1.0456 |       0.9564 |         0.400 |       0.7342 |       1.3621 |
+|   -0.361 |      0.500 |       1.0019 |       0.9981 |         0.500 |       0.7171 |       1.3944 |
+|    0.050 |      0.400 |       1.0079 |       0.9921 |         0.600 |       0.7724 |       1.2946 |
+|    0.460 |      0.300 |       1.0071 |       0.9929 |         0.700 |       0.8101 |       1.2345 |
+|    1.038 |      0.200 |       0.9209 |       1.0859 |         0.800 |       0.8056 |       1.2414 |
+|    1.779 |      0.100 |       0.9415 |       1.0622 |         0.900 |       0.8515 |       1.1744 |
+|    2.410 |      0.050 |       1.5216 |       0.6572 |         0.950 |       0.9060 |       1.1038 |
+|    3.542 |      0.010 |       1.9905 |       0.5024 |         0.990 |       0.8915 |       1.1217 |
+
+**Grand profit factor**: 1.132
+**Optimal long threshold**: 2.4098, profit factor = 1.522
+**Optimal short threshold**: -1.4979, profit factor = 1.324
+
+**P-values**: Long=0.999, Unbiased Long=0.999
+**P-values**: Short=0.000, Unbiased Short=0.001
