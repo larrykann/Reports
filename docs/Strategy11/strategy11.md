@@ -10,7 +10,7 @@ author: Larry Kann
 
 A mean reversion strategy that uses the Stochastic indicator to time entries and exits. The strategy includes a liquidity filter and uses short timeframe EMAs for trend confirmation.
 
-This file will be updated for as long as the strategy is being developed, deployed (live or simulation), or distributed. Once it has been discontinued, it will be noted here. The code block will always reflect the most recent version of the strategy. The change log can be used to see changes and adjustments to the code over time.
+This file will be updated for as long as the strategy is being developed, deployed (live or simulation), or distributed. Once it has been discontinued, it will be noted here. The change log can be used to see changes and adjustments to the code over time.
 
 **Strategy Features**:
 
