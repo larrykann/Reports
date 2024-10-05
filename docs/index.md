@@ -8,18 +8,22 @@ references: []
 
 # HGT - Strategy Reports and Market Research
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Reports for custom strategies and indicators created by Hunt Gather Trade (HGT).
 
-## Commands
+Contained in each report:
+#### Strategy Reports
+- Strategy descriptions and basic overview.
+- Backtest results and backtest engine used for results
+- Data source used for results.
+- Strategy result statistics, graphs, and tables.
+- Monte Carlo Permutation Tests
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+#### Indicator Reports
+*Tests are performed with a custom Python library of tools designed to test the statistical soundness of the indicator.*
+- Data source.
+- Basic statistics.
+- Mutual information test.
+- Serial Correlated Mean-break Test
+- Threshold table and optimization reports.
 
-## Project layout
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
