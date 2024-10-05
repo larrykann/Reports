@@ -104,21 +104,63 @@ This file will be updated for as long as the strategy is being developed, deploy
 
 ## Strategy Correlations
 
-<p><div style='overflow-x:auto'><table class='w3-table' style='border:1px solid black'><tr style='border-bottom:1px solid black'><td style = 'border-right:1px solid black;text-align:center'><b>RETURNS</b></td>
-<th scope='col' bgcolor=#F0F0F0 style='text-align:center;color:#4E8542'>strategy_12_long_1</th><th scope='col' bgcolor=#F0F0F0 style='text-align:center;color:#9F2936'>strategy_12_long_2</th><th scope='col' bgcolor=#F0F0F0 style='text-align:center;color:#F79646'>Combined</th></tr>
-<tr><th scope='row' bgcolor=#F0F0F0 style='text-align:right;border-right:1px solid black;color:#4E8542'>strategy_12_long_1</th><td bgcolor=#00FF00 style='text-align:center'>1.00</td><td bgcolor=#FFFBFB style='text-align:center'>-0.01</td><td bgcolor=#28FF28 style='text-align:center'>0.84</td></tr>
-<tr><th scope='row' bgcolor=#F0F0F0 style='text-align:right;border-right:1px solid black;color:#9F2936'>strategy_12_long_2</th><td bgcolor=#FFFBFB style='text-align:center'>-0.01</td><td bgcolor=#00FF00 style='text-align:center'>1.00</td><td bgcolor=#7AFF7A style='text-align:center'>0.52</td></tr>
-<tr><th scope='row' bgcolor=#F0F0F0 style='text-align:right;border-right:1px solid black;color:#F79646'>Combined</th><td bgcolor=#28FF28 style='text-align:center'>0.84</td><td bgcolor=#7AFF7A style='text-align:center'>0.52</td><td bgcolor=#00FF00 style='text-align:center'>1.00</td></tr>
+<div style='overflow-x:auto'>
+<table class='w3-table' style='border:1px solid black'>
+  <tr style='border-bottom:1px solid black'>
+    <td style='border-right:1px solid black;text-align:center'><b>RETURNS</b></td>
+    <th scope='col' bgcolor="#F0F0F0" style='text-align:center;color:#4E8542'>strategy_12_long_1</th>
+    <th scope='col' bgcolor="#F0F0F0" style='text-align:center;color:#9F2936'>strategy_12_long_2</th>
+    <th scope='col' bgcolor="#F0F0F0" style='text-align:center;color:#F79646'>Combined</th>
+  </tr>
+  <tr>
+    <th scope='row' bgcolor="#F0F0F0" style='text-align:right;border-right:1px solid black;color:#4E8542'>strategy_12_long_1</th>
+    <td bgcolor="#00FF00" style='text-align:center'>1.00</td>
+    <td bgcolor="#FFFBFB" style='text-align:center'>-0.01</td>
+    <td bgcolor="#28FF28" style='text-align:center'>0.84</td>
+  </tr>
+  <tr>
+    <th scope='row' bgcolor="#F0F0F0" style='text-align:right;border-right:1px solid black;color:#9F2936'>strategy_12_long_2</th>
+    <td bgcolor="#FFFBFB" style='text-align:center'>-0.01</td>
+    <td bgcolor="#00FF00" style='text-align:center'>1.00</td>
+    <td bgcolor="#7AFF7A" style='text-align:center'>0.52</td>
+  </tr>
+  <tr>
+    <th scope='row' bgcolor="#F0F0F0" style='text-align:right;border-right:1px solid black;color:#F79646'>Combined</th>
+    <td bgcolor="#28FF28" style='text-align:center'>0.84</td>
+    <td bgcolor="#7AFF7A" style='text-align:center'>0.52</td>
+    <td bgcolor="#00FF00" style='text-align:center'>1.00</td>
+  </tr>
 </table>
 </div>
 
 <!-- Add a blank line here to separate blocks -->
 
-<p><div style='overflow-x:auto'><table class='w3-table' style='border:1px solid black'><tr style='border-bottom:1px solid black'><td style = 'border-right:1px solid black;text-align:center'><b>DRAWDOWNS</b></td>
-<th scope='col' bgcolor=#F0F0F0 style='text-align:center;color:#4E8542'>strategy_12_long_1</th><th scope='col' bgcolor=#F0F0F0 style='text-align:center;color:#9F2936'>strategy_12_long_2</th><th scope='col' bgcolor=#F0F0F0 style='text-align:center;color:#F79646'>Combined</th></tr>
-<tr><th scope='row' bgcolor=#F0F0F0 style='text-align:right;border-right:1px solid black;color:#4E8542'>strategy_12_long_1</th><td bgcolor=#00FF00 style='text-align:center'>1.00</td><td bgcolor=#000000 style='text-align:center'>0.00</td><td bgcolor=#19FF19 style='text-align:center'>0.90</td></tr>
-<tr><th scope='row' bgcolor=#F0F0F0 style='text-align:right;border-right:1px solid black;color:#9F2936'>strategy_12_long_2</th><td bgcolor=#000000 style='text-align:center'>0.00</td><td bgcolor=#000000 style='text-align:center'>0.00</td><td bgcolor=#000000 style='text-align:center'>0.00</td></tr>
-<tr><th scope='row' bgcolor=#F0F0F0 style='text-align:right;border-right:1px solid black;color:#F79646'>Combined</th><td bgcolor=#19FF19 style='text-align:center'>0.90</td><td bgcolor=#000000 style='text-align:center'>0.00</td><td bgcolor=#00FF00 style='text-align:center'>1.00</td></tr>
+<div style='overflow-x:auto'>
+<table class='w3-table' style='border:1px solid black'>
+  <tr style='border-bottom:1px solid black'>
+    <td style='border-right:1px solid black;text-align:center'><b>DRAWDOWNS</b></td>
+    <th scope='col' bgcolor="#F0F0F0" style='text-align:center;color:#4E8542'>strategy_12_long_1</th>
+    <th scope='col' bgcolor="#F0F0F0" style='text-align:center;color:#9F2936'>strategy_12_long_2</th>
+    <th scope='col' bgcolor="#F0F0F0" style='text-align:center;color:#F79646'>Combined</th>
+  </tr>
+  <tr>
+    <th scope='row' bgcolor="#F0F0F0" style='text-align:right;border-right:1px solid black;color:#4E8542'>strategy_12_long_1</th>
+    <td bgcolor="#00FF00" style='text-align:center'>1.00</td>
+    <td bgcolor="#000000" style='text-align:center'>0.00</td>
+    <td bgcolor="#19FF19" style='text-align:center'>0.90</td>
+  </tr>
+  <tr>
+    <th scope='row' bgcolor="#F0F0F0" style='text-align:right;border-right:1px solid black;color:#9F2936'>strategy_12_long_2</th>
+    <td bgcolor="#000000" style='text-align:center'>0.00</td>
+    <td bgcolor="#000000" style='text-align:center'>0.00</td>
+    <td bgcolor="#000000" style='text-align:center'>0.00</td>
+  </tr>
+  <tr>
+    <th scope='row' bgcolor="#F0F0F0" style='text-align:right;border-right:1px solid black;color:#F79646'>Combined</th>
+    <td bgcolor="#19FF19" style='text-align:center'>0.90</td>
+    <td bgcolor="#000000" style='text-align:center'>0.00</td>
+    <td bgcolor="#00FF00" style='text-align:center'>1.00</td>
+  </tr>
 </table>
 </div>
 
