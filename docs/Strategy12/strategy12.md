@@ -101,6 +101,7 @@ This file will be updated for as long as the strategy is being developed, deploy
 | 2023 | n/a  | n/a  | n/a    | n/a    | n/a   | n/a  | n/a  | n/a  | 0.0%   | 13.8%  | 28.9%  | 19.5%  | **75.3%** | -3.8%   |
 | 2024 | 3.5% | 4.1% | **-5.5%** | **-0.7%** | 11.0% | 4.7% | 8.0% | 8.5% | **-0.2%** | 0.0%   | n/a    | n/a    | **37.4%** | -12.6%  |
 | **AVG** | **3.5%** | **4.1%** | **-5.5%** | **-0.7%** | **11.0%** | **4.7%** | **8.0%** | **8.5%** | **-0.1%** | **6.9%** | **28.9%** | **19.5%** | **56.3%** | **-8.2%** |
+
 ## Strategy Correlations
 
 <p><div style='overflow-x:auto'><table class='w3-table' style='border:1px solid black'><tr style='border-bottom:1px solid black'><td style = 'border-right:1px solid black;text-align:center'><b>RETURNS</b></td>
@@ -121,10 +122,12 @@ This file will be updated for as long as the strategy is being developed, deploy
 ## Visualizations
 
 
-![TWEQ](images/graph2.png)
+![EQ](images/graph2.png)
+
 
 ![Drawdown](images/graph3.png)
 <div style="page-break-after: always;"></div>
+
 ![Daily](images/graph5.png)
 
 ![Monthly](images/graph7.png)
@@ -138,8 +141,6 @@ This file will be updated for as long as the strategy is being developed, deploy
 ![Distribution of %Gains](images/plot1.png)
 <div style="page-break-after: always;"></div>
 ![Distribution of %Excursions](images/plot2.png)
-
-## Monte Carlo Analysis
 
 ## Monte Carlo Analysis
 
@@ -158,6 +159,7 @@ This file will be updated for as long as the strategy is being developed, deploy
 
 
 ![MCPT Prodfit](images/plot4.png)
+
 ![MCPT Profit](images/plot5.png)
 
 
