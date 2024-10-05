@@ -6,7 +6,7 @@ The generated report provides a comprehensive analysis of trading indicators, of
 
 ![Stochastic_2](images/Stochastic_2.png)
 
-![Log_Returns](images/Log_Returns.png)
+![Log_Returns](images/log_returns.png)
 
 ## Simple Statistics and Relative Entropy Report
 
