@@ -63,14 +63,14 @@ This file will be updated for as long as the strategy is being developed, deploy
 
 ## Settings
 
-| Setting            | Value                                        |
-| ------------------ | -------------------------------------------- |
-| Bar Size           | Daily                                        |
-| Account Size Start | $25,000                                      |
-| Data Source        | Norgate                                      |
-| Universe           | Micro E-mini S&P 500 (MES) and VIX           |
-| Date Range         | 09/25/2023 to 10/04/2024                     |
-| Platform/Engine    | RealTest                                     |
+| Setting            | Value                              |     |
+| ------------------ | ---------------------------------- | --- |
+| Bar Size           | Daily                              |     |
+| Account Size Start | $25,000                            |     |
+| Data Source        | Norgate                            |     |
+| Universe           | Micro E-mini S&P 500 (MES) and VIX |     |
+| Date Range         | 09/25/2023 to 10/04/2024           |     |
+| Platform/Engine    | RealTest                           |     |
 
 ## Summary Stats (Strategy 12)
 
