@@ -8,8 +8,8 @@ nav:
       - Strategy11: Strategy11/strategy11.md
       - Strategy11D: Strategy11D/strategy11d.md
       - Strategy12: Strategy12/strategy12.md
-      - Strategy 13:  Strategy13/strategy13.md
-  - Feature Reports
+      - Strategy 13: Strategy13/strategy13.md
+  - Feature Reports:
      - Stochastic:  IndicatorReports/Stochastic/Stochastic.md
      - VIX and SPX Products: IndicatorReports/VIX_Related_Products/VIX_Related_Products.md
 
