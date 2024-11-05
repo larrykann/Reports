@@ -3,12 +3,13 @@ site_name: HGT Reports
 nav:
   - Home: index.md
   - Strategies: 
-      - Strategy9: Strategy9/strategy9.md
-      - Strategy10: Strategy10/strategy10.md
-      - Strategy11: Strategy11/strategy11.md
-      - Strategy11D: Strategy11D/strategy11d.md
-      - Strategy12: Strategy12/strategy12.md
+      - Strategy 9: Strategy9/strategy9.md
+      - Strategy 10: Strategy10/strategy10.md
+      - Strategy 11: Strategy11/strategy11.md
+      - Strategy 11D: Strategy11D/strategy11d.md
+      - Strategy 12: Strategy12/strategy12.md
       - Strategy 13: Strategy13/Strategy13.md
+      - Strategy 14: Strategy14/Strategy14.md
   - Feature Reports:
      - Stochastic:  IndicatorReports/Stochastic/Stochastic.md
      - VIX and SPX Products: IndicatorReports/VIX_Related_Products/VIX_Related_Products.md
