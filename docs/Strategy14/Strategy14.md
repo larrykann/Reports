@@ -139,7 +139,7 @@ This file will be updated for as long as the strategy is being developed, deploy
 
 ## Visualizations
 
-![[Reports/docs/Strategy14/images/graph2.png]]
+![Drawdown](images/graph2.png)
 
 ![Drawdown](images/graph3.png)
 <div style="page-break-after: always;"></div>
