@@ -169,7 +169,7 @@ This file will be updated for as long as the strategy is being developed, deploy
 ## Visualizations
 
 
-![EQ](images/graph2.png)
+![EQ](Reports/docs/Strategy12/images/graph2.png)
 
 
 ![Drawdown](images/graph3.png)

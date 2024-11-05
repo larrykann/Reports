@@ -145,7 +145,7 @@ Drawdowns:
 <div style="page-break-after: always;"></div>
 ### Daily Stats Graphs
 
-![TWEQ](images/graph2.png)
+![TWEQ](Reports/docs/Strategy9/images/graph2.png)
 
 ![Drawdown](images/graph3.png)
 <div style="page-break-after: always;"></div>

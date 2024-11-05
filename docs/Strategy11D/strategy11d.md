@@ -153,7 +153,7 @@ _*benchmark strategies are not included in combined stats_
 ## Visualizations
 
 
-![TWEQ](images/graph2.png)
+![TWEQ](Reports/docs/Strategy11D/images/graph2.png)
 
 ![Drawdown](images/graph3.png)
 <div style="page-break-after: always;"></div>

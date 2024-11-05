@@ -107,7 +107,7 @@ This strategy trades 2 contracts as that is the average maximum amount of full-s
 ## Visualizations
 
 
-![EQ](images/graph2.png)
+![EQ](Reports/docs/Strategy13/images/graph2.png)
 
 
 ![Drawdown](images/graph3.png)

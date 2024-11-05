@@ -124,7 +124,7 @@ This strategy seeks to capitalize on mean reversion opportunities in the Nasdaq 
 
 ## Visualizations
 
-![TWEQ](images/graph2.png)
+![TWEQ](Reports/docs/Strategy10/images/graph2.png)
 
 ![Drawdown](images/graph3.png)
 <div style="page-break-after: always;"></div>
