@@ -25,17 +25,19 @@ output:
 ---
 # Strategy 16 
 
-A mean reversion trading strategy that trades IWM and operates exclusively on long positions. It leverages the Chaikin's Money Flow indicator combined with MACD to determine optimal times to enter and exit trades based on SPX performance as a breadth/regime filter. 
+A mean reversion trading strategy that trades IWM and operates exclusively on long positions. It leverages the Chaikin's Money Flow indicator combined with MACD to determine optimal times to enter and exit trades based on RTY performance as a breadth/regime filter. 
 
 This file will be updated for as long as the strategy is being developed, deployed (live or simulation), or distributed. Once it has been discontinued, it will be noted here. The code block will always reflect the most recent version of the strategy. The change log can be used to see changes and adjustments to the code over time. 
 
 **Strategy Features**: 
+
 - Day Trading Futures Strategy (Long Only) 
 - Trades IWM 
 - Utilizes Chaikin's Money Flow and MACD indicators to time entries and exits based on SPX performance - Supports long trading strategies
 - Commissions and slippage accounted for in backtest results 
 
 **Key Metrics**: _Key metrics are from the latest backtest date in the date range above in the test settings._ 
+
 - Compound Annual Return: **5.21%** 
 - Max Historical Drawdown: **-14.01%** 
 - Average Holding Period: **4.51 Days** (Win) / **5.22 Days** (Loss) 
@@ -59,6 +61,7 @@ This file will be updated for as long as the strategy is being developed, deploy
 
 
 ## Summary Stats (Strategy 16) 
+
 |                  | strategy_16_long |     |
 | ---------------- | ---------------- | --- |
 | **Periods**      | 4,463            |     |
@@ -80,6 +83,7 @@ This file will be updated for as long as the strategy is being developed, deploy
 | **MaxExp**       | 101.66%          |     |
 
 ## Combined Monthly Percent Gains
+
 | YEAR | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec | **TOTAL** | MaxDD | 
 | ---- | ------ | ------ | ------ | ------ | ------- | ---- | ----- | ------ | ------ | ------ | ------ | ------ | -------- | ------ | 
 | 2007 | 4.1% | 0.6% | -3.3% | 0.0% | 3.3% | 4.7% | 0.8% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | **10.4%** | -4.7% | 
@@ -101,8 +105,7 @@ This file will be updated for as long as the strategy is being developed, deploy
 | 2023 | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | **0.0%** | -0.0% | 
 | 2024 | 1.5% | 7.1% | 5.3% | -1.1% | -0.6% | 0.0% | 0.0% | 2.4% | 4.6% | n/a | n/a | n/a | **20.5%** | -3.8% | 
 | **AVG** | **0.5%** | **0.6%** | **1.2%** | **0.6%** | **0.2%** | **0.5%** | **0.4%** | **-0.3%** | **0.7%** | **-0.2%** | **0.7%** | **0.5%** | **5.5%** | **-4.6%** | 
-</table> 
-</div> 
+
 ## Visualizations ![Drawdown](images/graph2.png) ![Drawdown](images/graph3.png) <div style="page-break-after: always;"></div> ![Daily](images/graph5.png) ![Monthly](images/graph7.png) <div style="page-break-after: always;"></div> ### Trade Plots ![Individual %Gains](images/plot0.png) ![Distribution of %Gains](images/plot1.png) <div style="page-break-after: always;"></div> ![Distribution of %Excursions](images/plot2.png) 
 ## Monte Carlo Analysis 
 
