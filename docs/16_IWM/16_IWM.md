@@ -25,7 +25,7 @@ output:
 ---
 # Strategy 16 
 
-A mean reversion trading strategy that trades IWM and operates exclusively on long positions. It leverages the Chaikin's Money Flow indicator combined with MACD to determine optimal times to enter and exit trades based on RTY performance as a breadth/regime filter. 
+A mean reversion trading strategy that trades IWM and operates exclusively on long positions. It leverages the Close Minus Moving Average (CMMA) indicator to determine optimal times to enter and exit trades based on RTY performance as a breadth/regime filter. 
 
 This file will be updated for as long as the strategy is being developed, deployed (live or simulation), or distributed. Once it has been discontinued, it will be noted here. The code block will always reflect the most recent version of the strategy. The change log can be used to see changes and adjustments to the code over time. 
 
@@ -33,7 +33,7 @@ This file will be updated for as long as the strategy is being developed, deploy
 
 - Day Trading Futures Strategy (Long Only) 
 - Trades IWM 
-- Utilizes Chaikin's Money Flow and MACD indicators to time entries and exits based on SPX performance - Supports long trading strategies
+- Utilizes the CMMA to time entries and exits based on R2K performance - Supports long trading strategies
 - Commissions and slippage accounted for in backtest results 
 
 **Key Metrics**: _Key metrics are from the latest backtest date in the date range above in the test settings._ 
