@@ -172,20 +172,20 @@ This file will be updated for as long as the strategy is being developed, deploy
 ![EQ](Reports/docs/Strategy12/images/graph2.png)
 
 
-![Drawdown](images/graph3.png)
+![Drawdown](Reports/docs/Strategy12/images/graph3.png)
 <div style="page-break-after: always;"></div>
 
-![Daily](images/graph5.png)
+![Daily](Reports/docs/Strategy12/images/graph5.png)
 
-![Monthly](images/graph7.png)
+![Monthly](Reports/docs/Strategy12/images/graph7.png)
 <div style="page-break-after: always;"></div>
 ### Trade Plots
 
 
-![Individual %Gains](images/plot0.png)
+![Individual %Gains](Reports/docs/Strategy12/images/plot0.png)
 
 
-![Distribution of %Gains](images/plot1.png)
+![Distribution of %Gains](Reports/docs/Strategy12/images/plot1.png)
 <div style="page-break-after: always;"></div>
 ![Distribution of %Excursions](images/plot2.png)
 
@@ -205,8 +205,8 @@ This file will be updated for as long as the strategy is being developed, deploy
 | **backtest** | **140.82%** | **134.39%** | **-12.59%** |
 
 
-![MCPT Prodfit](images/plot4.png)
+![MCPT Prodfit](Reports/docs/Strategy12/images/plot4.png)
 
-![MCPT Profit](images/plot5.png)
+![MCPT Profit](Reports/docs/Strategy12/images/plot5.png)
 
 

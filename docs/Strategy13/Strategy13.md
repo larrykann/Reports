@@ -110,20 +110,20 @@ This strategy trades 2 contracts as that is the average maximum amount of full-s
 ![EQ](Reports/docs/Strategy13/images/graph2.png)
 
 
-![Drawdown](images/graph3.png)
+![Drawdown](Reports/docs/Strategy13/images/graph3.png)
 <div style="page-break-after: always;"></div>
 
-![Daily](images/graph5.png)
+![Daily](Reports/docs/Strategy13/images/graph5.png)
 
-![Monthly](images/graph7.png)
+![Monthly](Reports/docs/Strategy13/images/graph7.png)
 <div style="page-break-after: always;"></div>
 ### Trade Plots
 
 
-![Individual %Gains](images/plot0.png)
+![Individual %Gains](Reports/docs/Strategy13/images/plot0.png)
 
 
-![Distribution of %Gains](images/plot1.png)
+![Distribution of %Gains](Reports/docs/Strategy13/images/plot1.png)
 <div style="page-break-after: always;"></div>
 ![Distribution of %Excursions](images/plot2.png)
 
@@ -144,9 +144,9 @@ The results for this strategy are less pleasing when looking at the Monte-Carlo 
 | 99%        | $64,368     | $37,034 | **($3,020)**     |
 | **backtest** | **$29,068** | **$16,724** | **($7,420)** |
 
-![MCPT Prodfit](images/plot4.png)
+![MCPT Prodfit](Reports/docs/Strategy13/images/plot4.png)
 
-![MCPT Profit](images/plot5.png)
+![MCPT Profit](Reports/docs/Strategy13/images/plot5.png)
 
 
 

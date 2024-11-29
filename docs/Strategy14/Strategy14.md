@@ -139,24 +139,24 @@ This file will be updated for as long as the strategy is being developed, deploy
 
 ## Visualizations
 
-![Drawdown](images/graph2.png)
+![Drawdown](Reports/docs/Strategy14/images/graph2.png)
 
-![Drawdown](images/graph3.png)
+![Drawdown](Reports/docs/Strategy14/images/graph3.png)
 <div style="page-break-after: always;"></div>
 
-![Daily](images/graph5.png)
+![Daily](Reports/docs/Strategy14/images/graph5.png)
 
-![Monthly](images/graph7.png)
+![Monthly](Reports/docs/Strategy14/images/graph7.png)
 <div style="page-break-after: always;"></div>
 
 ### Trade Plots
 
-![Individual %Gains](images/plot0.png)
+![Individual %Gains](Reports/docs/Strategy14/images/plot0.png)
 
-![Distribution of %Gains](images/plot1.png)
+![Distribution of %Gains](Reports/docs/Strategy14/images/plot1.png)
 <div style="page-break-after: always;"></div>
 
-![Distribution of %Excursions](images/plot2.png)
+![Distribution of %Excursions](Reports/docs/Strategy14/images/plot2.png)
 
 ## Monte Carlo Analysis
 
@@ -175,7 +175,7 @@ The results for this strategy are less pleasing when looking at the Monte-Carlo 
 | 99%        | 83.31%     | 3.49%   | **-1.50%**       |
 | **backtest** | **36.87%** | **1.79%** | **-5.42%**       |
 
-![MCPT Profit](images/plot4.png)
+![MCPT Profit](Reports/docs/Strategy14/images/plot4.png)
 
-![MCPT Excursion](images/plot5.png)
+![MCPT Excursion](Reports/docs/Strategy14/images/plot5.png)
 

@@ -126,18 +126,18 @@ This strategy seeks to capitalize on mean reversion opportunities in the Nasdaq 
 
 ![TWEQ](Reports/docs/Strategy10/images/graph2.png)
 
-![Drawdown](images/graph3.png)
+![Drawdown](Reports/docs/Strategy10/images/graph3.png)
 <div style="page-break-after: always;"></div>
 ![Daily](images/graph5.png)
 
-![Monthly](images/graph7.png)
+![Monthly](Reports/docs/Strategy10/images/graph7.png)
 <div style="page-break-after: always;"></div>
 ### Trade Plots
 
-![Individual %Gains](images/plot0.png)
+![Individual %Gains](Reports/docs/Strategy10/images/plot0.png)
 
 
-![Distribution of %Gains](images/plot1.png)
+![Distribution of %Gains](Reports/docs/Strategy10/images/plot1.png)
 <div style="page-break-after: always;"></div>
 ![Distribution of %Excursions](images/plot2.png)
 
@@ -156,6 +156,6 @@ This strategy seeks to capitalize on mean reversion opportunities in the Nasdaq 
 | 99%          | 6,675.73%   | 48.72%     | -3.42%       |
 | **backtest** | **538.47%** | **19.07%** | **-26.33%**  |
 
-![MCPT Prodfit](images/plot4.png)
-![MCPT Prodfit](images/plot5.png)
+![MCPT Prodfit](Reports/docs/Strategy10/images/plot4.png)
+![MCPT Prodfit](Reports/docs/Strategy10/images/plot5.png)
 
