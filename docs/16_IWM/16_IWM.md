@@ -108,9 +108,20 @@ This file will be updated for as long as the strategy is being developed, deploy
 
 ## Visualizations 
 
-![Equity](Reports/docs/16_IWM/images/graph2.png) ![Drawdown](Reports/docs/16_IWM/images/graph3.png) <div style="page-break-after: always;"></div> ![Daily](Reports/docs/16_IWM/images/graph5.png) ![Monthly](Reports/docs/16_IWM/images/graph7.png) <div style="page-break-after: always;"></div> ### Trade Plots 
+![Equity](images/graph2.png) 
 
-![Individual %Gains](Reports/docs/16_IWM/images/plot0.png) ![Distribution of %Gains](Reports/docs/16_IWM/images/plot1.png) <div style="page-break-after: always;"></div> ![Distribution of %Excursions](Reports/docs/16_IWM/images/plot2.png) 
+![Drawdown](images/graph3.png)
+
+![Daily](images/graph5.png) 
+
+![Monthly](images/graph7.png) <div style="page-break-after: always;"></div> 
+### Trade Plots 
+
+![Individual %Gains](images/plot0.png) 
+
+![Distribution of %Gains](images/plot1.png)
+
+![Distribution of %Excursions](images/plot2.png) 
 ## Monte Carlo Analysis 
 
 The results for this strategy indicate moderate variability with a range of outcomes. While the backtest shows consistent performance, the Monte Carlo simulations highlight potential vulnerabilities, likely due to the sensitivity of the CMMA and MACD parameters to market conditions. 
@@ -128,4 +139,6 @@ The results for this strategy indicate moderate variability with a range of outc
 | 99% | 363.37% | 9.04% | **-5.44%** | 
 | **backtest** | **144.49%** | **5.17%** | **-14.01%** | 
 
-![MCPT Profit](Reports/docs/16_IWM/images/plot4.png) ![MCPT Excursion](Reports/docs/16_IWM/images/plot5.png)
+![MCPT Profit](images/plot4.png) 
+
+![MCPT Excursion](images/plot5.png)

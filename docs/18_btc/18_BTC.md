@@ -32,21 +32,21 @@ This document will be updated as the strategy is developed, deployed (live or si
 
 **Strategy Features**:
 
-- **Trend Following Strategy (Long Only)**
-- **Trades BTC/Crypto ETFs**
-- **Utilizes Modified MACD Indicator for Entry Signals and Exit**
-- **Daily Bar Size for Analysis**
-- **Commissions and Slippage Accounted for in Backtest Results**
+- Trend Strategy (Long Only)
+- Trades BTC/Crypto ETFs
+- Utilizes Modified MACD Indicator for Entry Signals and Exit
+- Daily Bar Size for Analysis
+- Commissions and Slippage Accounted for in Backtest Results
 
 **Key Metrics**: _Key metrics are from the latest backtest date in the date range above in the test settings._
 
-- **Rate of Return (ROR):** 46.92%
-- **Max Historical Drawdown:** **-27.73%**
-- **Expectancy Per Trade:** **7.50%**
-- **Win Rate:** **52.00%**
-- **Profit Factor:** **5.75**
-- **Sharpe Ratio:** **1.29**
-- **MAR Ratio:** **1.69**
+- Rate of Return (ROR): **46.92%**
+- Max Historical Drawdown: **-27.73%**
+- Expectancy Per Trade: **7.50%**
+- Win Rate: **52.00%**
+- Profit Factor: **5.75**
+- Sharpe Ratio: **1.29**
+- MAR Ratio: **1.69**
 
 ## Settings
 
@@ -98,13 +98,13 @@ This document will be updated as the strategy is developed, deployed (live or si
 
 ## Visualizations
 
-![Equity](images/graph2.png) ![Drawdown](images/graph3.png)  
-![Daily](images/graph5.png) ![Monthly](images/graph7.png)
+![Equity](Reports/docs/18_BTC/images/graph2.png) ![Drawdown](Reports/docs/18_BTC/images/graph3.png)  
+![Daily](Reports/docs/18_BTC/images/graph5.png) ![Monthly](Reports/docs/18_BTC/images/graph7.png)
 
 ### Trade Plots
 
-![Individual %Gains](images/plot0.png) ![Distribution of %Gains](images/plot1.png)  
-![Distribution of %Excursions](images/plot2.png)
+![Individual %Gains](Reports/docs/18_BTC/images/plot0.png) ![Distribution of %Gains](Reports/docs/18_BTC/images/plot1.png)  
+![Distribution of %Excursions](Reports/docs/18_BTC/images/plot2.png)
 
 ## Monte Carlo Analysis
 
@@ -121,4 +121,4 @@ This document will be updated as the strategy is developed, deployed (live or si
 | 99%         | 11,310.12%   | 51.23%   | **-2.27%**       |
 | **Backtest**| **1,945.24%**| **30.15%**| **-27.73%**      |
 
-![MCPT Profit](images/plot4.png) ![MCPT Excursion](images/plot5.png)
+![MCPT Profit](Reports/docs/18_BTC/images/plot4.png) ![MCPT Excursion](Reports/docs/18_BTC/images/plot5.png)

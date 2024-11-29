@@ -29,27 +29,27 @@ An ADX breakout trading strategy for ES and NQ futures contracts operating exclu
 
 Source material can be found at:
 
-[# “NASDAQ HITTER” ALGO BREAKOUT STRATEGY](https://www.youtube.com/watch?v=eq7alcWRJpA&t=68s)
+[“NASDAQ HITTER” ALGO BREAKOUT STRATEGY](https://www.youtube.com/watch?v=eq7alcWRJpA&t=68s)
 
 This document will be updated as the strategy is developed, deployed (live or simulation), or distributed. Once discontinued, it will be noted here. The change log can be used to track adjustments and improvements over time.
 
 **Strategy Features**:
 
-- **Trend Following Futures Strategy (Long Only)**
-- **Trades ES and NQ Futures**
-- **Utilizes ADX Indicator for Breakout Signals**
-- **Daily Bar Size for Analysis**
-- **Commissions and Slippage Accounted for in Backtest Results**
+- Trend Following Futures Strategy (Long Only)
+- Trades ES and NQ Futures
+- Utilizes ADX Indicator for Breakout Signals
+- Daily Bar Size for Analysis
+- Commissions and Slippage Accounted for in Backtest Results
 
 **Key Metrics**: _Key metrics are from the latest backtest date in the date range above in the test settings._
 
-- **Rate of Return (ROR):** 9.70%
-- **Max Historical Drawdown:** **-12.87%**
-- **Expectancy Per Trade:** **0.07%**
-- **Win Rate:** **52.58%**
-- **Profit Factor:** **1.43**
-- **Sharpe Ratio:** **0.79**
-- **MAR Ratio:** **0.75**
+- Rate of Return (ROR): **9.70%**
+- Max Historical Drawdown: **-12.87%**
+- Expectancy Per Trade: **0.07%**
+- Win Rate: **52.58%**
+- Profit Factor: **1.43**
+- Sharpe Ratio: **0.79**
+- MAR Ratio: **0.75**
 
 ## Settings
 
@@ -103,13 +103,13 @@ This document will be updated as the strategy is developed, deployed (live or si
 
 ## Visualizations
 
-![Equity](Reports/docs/17_ESNQ/images/graph2.png) ![Drawdown](Reports/docs/17_ESNQ/images/graph3.png)  
-![Daily](Reports/docs/17_ESNQ/images/graph5.png) ![Monthly](Reports/docs/17_ESNQ/images/graph7.png)
+![Equity](images/graph2.png) ![Drawdown](images/graph3.png)  
+![Daily](images/graph5.png) ![Monthly](images/graph7.png)
 
 ### Trade Plots
 
-![Individual %Gains](Reports/docs/17_ESNQ/images/plot0.png) ![Distribution of %Gains](Reports/docs/17_ESNQ/images/plot1.png)  
-![Distribution of %Excursions](Reports/docs/17_ESNQ/images/plot2.png)
+![Individual %Gains](images/plot0.png) ![Distribution of %Gains](images/plot1.png)  
+![Distribution of %Excursions](images/plot2.png)
 
 ## Monte Carlo Analysis
 
@@ -128,4 +128,4 @@ The results for this strategy indicate moderate variability with a range of outc
 | 99%        | $164,816   | $16,932 | **($9,338)**  |
 | **Backtest** | **$93,466** | **$9,602** | **($16,164)** |
 
-![MCPT Profit](Reports/docs/17_ESNQ/images/plot4.png) ![MCPT Excursion](Reports/docs/17_ESNQ/images/plot5.png)
+![MCPT Profit](images/plot4.png) ![MCPT Excursion](images/plot5.png)

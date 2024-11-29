@@ -106,12 +106,12 @@ This strategy seeks to capitalize on mean reversion opportunities in the Nasdaq 
 
 ### RETURNS
 
-|                   | buy_and_hold | strategy_10_short | strategy_10_long | Combined |
-| ----------------- | ------------ | ----------------- | ---------------- | -------- |
-| **buy_and_hold**   | 1.00         | -0.17             | 0.51             | 0.44     |
-| **strategy_10_short** | -0.17     | 1.00              | -0.05            | 0.22     |
-| **strategy_10_long**  | 0.51      | -0.05             | 1.00             | 0.96     |
-| **Combined**       | 0.44         | 0.22              | 0.96             | 1.00     |
+|                       | buy_and_hold | strategy_10_short | strategy_10_long | Combined |
+| --------------------- | ------------ | ----------------- | ---------------- | -------- |
+| **buy_and_hold**      | 1.00         | -0.17             | 0.51             | 0.44     |
+| **strategy_10_short** | -0.17        | 1.00              | -0.05            | 0.22     |
+| **strategy_10_long**  | 0.51         | -0.05             | 1.00             | 0.96     |
+| **Combined**          | 0.44         | 0.22              | 0.96             | 1.00     |
 
 ### DRAWDOWNS
 
@@ -126,18 +126,18 @@ This strategy seeks to capitalize on mean reversion opportunities in the Nasdaq 
 
 ![TWEQ](Reports/docs/Strategy10/images/graph2.png)
 
-![Drawdown](Reports/docs/Strategy10/images/graph3.png)
+![Drawdown](images/graph3.png)
 <div style="page-break-after: always;"></div>
 ![Daily](images/graph5.png)
 
-![Monthly](Reports/docs/Strategy10/images/graph7.png)
+![Monthly](images/graph7.png)
 <div style="page-break-after: always;"></div>
 ### Trade Plots
 
-![Individual %Gains](Reports/docs/Strategy10/images/plot0.png)
+![Individual %Gains](images/plot0.png)
 
 
-![Distribution of %Gains](Reports/docs/Strategy10/images/plot1.png)
+![Distribution of %Gains](images/plot1.png)
 <div style="page-break-after: always;"></div>
 ![Distribution of %Excursions](images/plot2.png)
 
@@ -156,6 +156,6 @@ This strategy seeks to capitalize on mean reversion opportunities in the Nasdaq 
 | 99%          | 6,675.73%   | 48.72%     | -3.42%       |
 | **backtest** | **538.47%** | **19.07%** | **-26.33%**  |
 
-![MCPT Prodfit](Reports/docs/Strategy10/images/plot4.png)
-![MCPT Prodfit](Reports/docs/Strategy10/images/plot5.png)
+![MCPT Prodfit](images/plot4.png)
+![MCPT Prodfit](images/plot5.png)
 

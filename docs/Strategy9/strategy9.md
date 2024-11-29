@@ -147,18 +147,18 @@ Drawdowns:
 
 ![TWEQ](Reports/docs/Strategy9/images/graph2.png)
 
-![Drawdown](Reports/docs/Strategy9/images/graph3.png)
+![Drawdown](images/graph3.png)
 <div style="page-break-after: always;"></div>
 ![Daily](images/graph5.png)
 
-![Monthly](Reports/docs/Strategy9/images/graph7.png)
+![Monthly](images/graph7.png)
 <div style="page-break-after: always;"></div>
 ### Trade Plots
 
-![Individual %Gains](Reports/docs/Strategy9/images/plot0.png)
+![Individual %Gains](images/plot0.png)
 
 
-![Distribution of %Gains](Reports/docs/Strategy9/images/plot1.png)
+![Distribution of %Gains](images/plot1.png)
 <div style="page-break-after: always;"></div>
 ![Distribution of %Excursions](images/plot2.png)
 
@@ -178,7 +178,7 @@ Drawdowns:
 | 99%        | 23,905.50%  | 36.77% | -2.53%       |
 | backtest   | 3,180.02%   | 22.07% | -20.11%      |
 
-![MCPT %Profit](Reports/docs/Strategy9/images/plot4.png)
+![MCPT %Profit](images/plot4.png)
 <div style="page-break-after: always;"></div>
 ![MCPT ](images/plot5.png)
 
