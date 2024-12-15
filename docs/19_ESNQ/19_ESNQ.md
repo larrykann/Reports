@@ -1,29 +1,3 @@
----
-aliases: []
-tags: []
-title: 19_ESNQ
-author: Larry Kann
-titlepage: true
-titlepage-rule-color: "336600"
-titlepage-text-color: "000000"
-colorlinks: "ff0d8a"
-toc: true
-toc-own-page: true
-mainfont: Arial
-monofont: Dank Mono
-linkcolor: magenta
-urlcolor: magenta
-listings-no-page-break: true
-code-block-font-size: \scriptsize
-output:
-  pdf:
-    pdf-engine: xelatex
-    output: 19_ESNQ.pdf
-    from: markdown
-    template: eisvogel
-    listings: true
----
-
 # Strategy 19
 
 A money flow and MACD-based trading strategy for ES/NQ, operating on both long and short positions. The strategy leverages Chaikin's Money Flow Indicator and a modified MACD indicator to determine optimal entry and exit points, aiming to exploit trends and reversals in the ES and NQ markets.
@@ -118,8 +92,10 @@ This document will be updated as the strategy is developed, deployed (live or si
 
 ## Visualizations
 
-![Equity](images/graph2.png) ![Drawdown](images/graph3.png)  
-![Daily](images/graph5.png) ![Monthly](images/graph7.png)
+![Equity](images/graph2.png) 
+![Drawdown](images/graph3.png)  
+![Daily](images/graph5.png) 
+![Monthly](images/graph7.png)
 
 ### Trade Plots
 
