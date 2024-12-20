@@ -29,35 +29,35 @@ _From latest backtest covering 1/2/2015 – 12/19/2024_
 
 ### Settings
 
-| Setting                | Value                        |
-| ---------------------- | ---------------------------- |
-| **Bar Size**           | Daily                        |
-| **Account Size Start** | \$100,000                    |
-| **Data Source**        | Norgate                      |
-| **Universe**           | ES/NQ                        |
-| **Date Range**         | 01/02/2015 to 12/19/2024     |
-| **Platform/Engine**    | RealTest                     |
-| **Use Available Bars** | False                        |
+| Setting                | Value                    |
+| :--------------------- | :----------------------- |
+| **Bar Size**           | Daily                    |
+| **Account Size Start** | $100,000                 |
+| **Data Source**        | Norgate                  |
+| **Universe**           | ES/NQ                    |
+| **Date Range**         | 01/02/2015 to 12/19/2024 |
+| **Platform/Engine**    | RealTest                 |
+| **Use Available Bars** | False                    |
 
 ---
 
 ### Summary Stats (Strategy 23 ES/NQ)
 
-|                  | strategy_7_long | strategy_8_long | Combined     |
-| ---------------- | --------------: | --------------: | -----------: |
-| **Periods**      |           2,463 |           2,456 |        2,463 |
-| **NetProfit**    |       \$130,976 |        \$54,094  |   \$185,070  |
-| **Comp**         |          False  |          False   |       False  |
-| **ROR**          |        13.40%   |         5.55%    | **18.93%**   |
-| **MaxDD**        |     **-25.41%** |      -6.58%      | **-25.41%**  |
-| **MAR**          |          0.53   |         0.84     |       0.75   |
-| **Trades**       |             87  |            142   |        229   |
-| **PctWins**      |        78.16%   |        59.86%    | **66.81%**   |
-| **AvgWin**       |         1.20%   |         0.50%    |       0.81%  |
-| **AvgLoss**      |         1.32%   |         0.37%    |       0.61%  |
-| **Expectancy**   |         0.65%   |         0.15%    | **0.34%**    |
-| **ProfitFactor** |          3.90   |         2.24     | **3.08**     |
-| **Sharpe**       |         0.64    |         0.90     | **0.87**     |
+|                  | strategy_7_long | strategy_8_long |    Combined |
+| :--------------- | --------------: | --------------: | ----------: |
+| **Periods**      |           2,463 |           2,456 |       2,463 |
+| **NetProfit**    |        $130,976 |         $54,094 |    $185,070 |
+| **Comp**         |           False |           False |       False |
+| **ROR**          |          13.40% |           5.55% |  **18.93%** |
+| **MaxDD**        |     **-25.41%** |          -6.58% | **-25.41%** |
+| **MAR**          |            0.53 |            0.84 |        0.75 |
+| **Trades**       |              87 |             142 |         229 |
+| **PctWins**      |          78.16% |          59.86% |  **66.81%** |
+| **AvgWin**       |           1.20% |           0.50% |       0.81% |
+| **AvgLoss**      |           1.32% |           0.37% |       0.61% |
+| **Expectancy**   |           0.65% |           0.15% |   **0.34%** |
+| **ProfitFactor** |            3.90 |            2.24 |    **3.08** |
+| **Sharpe**       |            0.64 |            0.90 |    **0.87** |
 
 ---
 
