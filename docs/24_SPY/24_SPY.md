@@ -1,6 +1,6 @@
 # 24 SPY
 
-A trend-following strategy for the SPY ETF that leverages VIX-based indicators and moving averages alongside ATR-based risk management to identify and capitalize on market trends. The strategy comprises separate long and short components, unified into a cohesive approach that dynamically adjusts to changing market conditions. It operates on daily bars and incorporates risk controls to manage drawdowns and optimize returns.
+A trend-following strategy for the SPY ETF that leverages VIX-based indicators and moving averages alongside ATR-based risk management to identify and capitalize on market trends. The strategy takes long and short positions. It operates on daily bars and incorporates risk controls to manage drawdowns and optimize returns.
 
 This document will be updated as the strategy is developed, deployed (live or simulation), or distributed. Once discontinued, it will be noted here. The change log can be used to track adjustments and improvements over time.
 
