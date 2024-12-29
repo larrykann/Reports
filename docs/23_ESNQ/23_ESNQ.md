@@ -91,16 +91,16 @@ _From latest backtest covering 1/2/2015 – 12/19/2024_
 
 ### Visualizations
 
-![Equity](Reports/docs/23_ESNQ/images/graph2.png)  
-![Drawdown](Reports/docs/23_ESNQ/images/graph3.png)  
-![Daily](Reports/docs/23_ESNQ/images/graph5.png)  
-![Monthly](Reports/docs/23_ESNQ/images/graph7.png)
+![Equity](images/graph2.png)  
+![Drawdown](images/graph3.png)  
+![Daily](graph5.png)  
+![Monthly](graph7.png)
 
 #### Trade Plots
 
-![Plot 0](Reports/docs/23_ESNQ/images/plot0.png)  
-![Plot 1](Reports/docs/23_ESNQ/images/plot1.png)  
-![Plot 2](Reports/docs/23_ESNQ/images/plot2.png)
+![Plot 0](images/plot0.png)  
+![Plot 1](images/plot1.png)  
+![Plot 2](images/plot2.png)
 
 ### Monte Carlo Analysis (Strategy 23 ES/NQ)
 
@@ -117,8 +117,8 @@ _From latest backtest covering 1/2/2015 – 12/19/2024_
 | 99%          | $293,267     | $29,444     | **($4,488)**  |
 | **backtest** | **$185,070** | **$18,581** | **($25,413)** |
 
-![MCPT Profit](Reports/docs/23_ESNQ/images/plot4.png)  
-![MCPT Excursion](Reports/docs/23_ESNQ/images/plot5.png)
+![MCPT Profit](images/plot4.png)  
+![MCPT Excursion](images/plot5.png)
 
 ---
 

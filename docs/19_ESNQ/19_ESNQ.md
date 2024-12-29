@@ -92,15 +92,15 @@ This document will be updated as the strategy is developed, deployed (live or si
 
 ## Visualizations
 
-![Equity](Reports/docs/19_ESNQ/images/graph2.png) 
-![Drawdown](Reports/docs/19_ESNQ/images/graph3.png)  
-![Daily](Reports/docs/19_ESNQ/images/graph5.png) 
-![Monthly](Reports/docs/19_ESNQ/images/graph7.png)
+![Equity](images/graph2.png) 
+![Drawdown](graph3.png)  
+![Daily](images/graph5.png) 
+![Monthly](images/graph7.png)
 
 ### Trade Plots
 
-![Individual %Gains](Reports/docs/19_ESNQ/images/plot0.png) ![Distribution of %Gains](Reports/docs/19_ESNQ/images/plot1.png)  
-![Distribution of %Excursions](Reports/docs/19_ESNQ/images/plot2.png)
+![Individual %Gains](images/plot0.png) ![Distribution of %Gains](images/plot1.png)  
+![Distribution of %Excursions](images/plot2.png)
 
 ## Monte Carlo Analysis
 
