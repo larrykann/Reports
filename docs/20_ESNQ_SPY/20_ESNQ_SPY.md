@@ -27,35 +27,35 @@ _From latest backtest covering 1/2/2015 – 12/13/2024_
 
 ### Settings
 
-| Setting                | Value                     |
-| ---------------------- | ------------------------- |
-| **Bar Size**           | Daily                     |
-| **Account Size Start** | \$100,000                 |
-| **Data Source**        | Norgate                   |
-| **Universe**           | ES/NQ                     |
-| **Date Range**         | 01/02/2015 to 12/13/2024  |
-| **Platform/Engine**    | RealTest                  |
-| **Use Available Bars** | False                     |
+| Setting                | Value                    |
+| ---------------------- | ------------------------ |
+| **Bar Size**           | Daily                    |
+| **Account Size Start** | $100,000                 |
+| **Data Source**        | Norgate                  |
+| **Universe**           | ES/NQ                    |
+| **Date Range**         | 01/02/2015 to 12/13/2024 |
+| **Platform/Engine**    | RealTest                 |
+| **Use Available Bars** | False                    |
 
 ### Summary Stats (Strategy 20 ES/NQ)
 
-|                  | strategy_20_long | strategy_20_short | Combined     |
-| ---------------- | ---------------- | ----------------- | ------------ |
-| **Periods**      | 2,462           | 2,314             | 2,462        |
-| **NetProfit**    | \$68,710        | \$43,923          | \$112,633    |
-| **Comp**         | False           | False             | False        |
-| **ROR**          | 7.04%           | 4.78%             | **11.53%**   |
-| **MaxDD**        | **-7.07%**      | **-13.10%**       | **-17.35%**  |
-| **MAR**          | 0.99            | 0.36              | 0.66         |
-| **Trades**       | 75              | 46                | 121          |
-| **PctWins**      | 78.67%          | 73.91%            | **76.86%**   |
-| **AvgWin**       | 0.72%           | 1.20%             | 0.90%        |
-| **AvgLoss**      | 0.51%           | 1.46%             | 0.92%        |
-| **Expectancy**   | 0.46%           | 0.50%             | **0.48%**    |
-| **ProfitFactor** | 5.56            | 2.28              | **3.27**     |
-| **Sharpe**       | 1.05            | 0.55              | **1.03**     |
-| **AvgExp**       | 6.25%           | 0.00%             | 8.06%        |
-| **MaxExp**       | 406.79%         | 0.00%             | 690.98%      |
+|                  | strategy_20_long | strategy_20_short | Combined    |
+| ---------------- | ---------------- | ----------------- | ----------- |
+| **Periods**      | 2,462            | 2,314             | 2,462       |
+| **NetProfit**    | $68,710          | $43,923           | $112,633    |
+| **Comp**         | False            | False             | False       |
+| **ROR**          | 7.04%            | 4.78%             | **11.53%**  |
+| **MaxDD**        | **-7.07%**       | **-13.10%**       | **-17.35%** |
+| **MAR**          | 0.99             | 0.36              | 0.66        |
+| **Trades**       | 75               | 46                | 121         |
+| **PctWins**      | 78.67%           | 73.91%            | **76.86%**  |
+| **AvgWin**       | 0.72%            | 1.20%             | 0.90%       |
+| **AvgLoss**      | 0.51%            | 1.46%             | 0.92%       |
+| **Expectancy**   | 0.46%            | 0.50%             | **0.48%**   |
+| **ProfitFactor** | 5.56             | 2.28              | **3.27**    |
+| **Sharpe**       | 1.05             | 0.55              | **1.03**    |
+| **AvgExp**       | 6.25%            | 0.00%             | 8.06%       |
+| **MaxExp**       | 406.79%          | 0.00%             | 690.98%     |
 
 ### Combined Monthly Percent Gains (Strategy 20 ES/NQ)
 
@@ -106,18 +106,18 @@ _From latest backtest covering 1/2/2015 – 12/13/2024_
 
 ### Monte Carlo Analysis (Strategy 20 ES/NQ)
 
-| Percentile | Net Profit | AAR       | Max Drawdown     |
-| ---------- | --------- | --------- | ---------------- |
-| 1%         | \$40,750   | \$4,098   | **(\$22,788)**   |
-| 5%         | \$79,568   | \$8,001   | **(\$21,088)**   |
-| 10%        | \$86,743   | \$8,723   | **(\$16,114)**   |
-| 20%        | \$97,353   | \$9,790   | **(\$13,678)**   |
-| 50%        | \$114,083  | \$11,472  | **(\$10,538)**   |
-| 80%        | \$132,078  | \$13,282  | **(\$7,640)**    |
-| 90%        | \$146,556  | \$14,737  | **(\$7,504)**    |
-| 95%        | \$152,143  | \$15,299  | **(\$6,456)**    |
-| 99%        | \$170,043  | \$17,099  | **(\$4,177)**    |
-| **backtest** | **\$112,633** | **\$11,326** | **(\$17,348)** |
+| Percentile   | Net Profit   | AAR         | Max Drawdown  |
+| ------------ | ------------ | ----------- | ------------- |
+| 1%           | $40,750      | $4,098      | **($22,788)** |
+| 5%           | $79,568      | $8,001      | **($21,088)** |
+| 10%          | $86,743      | $8,723      | **($16,114)** |
+| 20%          | $97,353      | $9,790      | **($13,678)** |
+| 50%          | $114,083     | $11,472     | **($10,538)** |
+| 80%          | $132,078     | $13,282     | **($7,640)**  |
+| 90%          | $146,556     | $14,737     | **($7,504)**  |
+| 95%          | $152,143     | $15,299     | **($6,456)**  |
+| 99%          | $170,043     | $17,099     | **($4,177)**  |
+| **backtest** | **$112,633** | **$11,326** | **($17,348)** |
 
 ![MCPT Profit](images/esnq/plot4.png) ![MCPT Excursion](images/esnq/plot5.png)
 
@@ -144,22 +144,22 @@ _From latest backtest covering 1/2/2015 – 12/13/2024_
 
 ### Settings
 
-| Setting                | Value                     |
-| ---------------------- | ------------------------- |
-| **Bar Size**           | Daily                     |
-| **Account Size Start** | \$100,000                 |
-| **Data Source**        | Norgate                   |
-| **Universe**           | SPY                       |
-| **Date Range**         | 01/02/2015 to 12/13/2024  |
-| **Platform/Engine**    | RealTest                  |
-| **Use Available Bars** | False                     |
+| Setting                | Value                    |
+| ---------------------- | ------------------------ |
+| **Bar Size**           | Daily                    |
+| **Account Size Start** | $100,000                 |
+| **Data Source**        | Norgate                  |
+| **Universe**           | SPY                      |
+| **Date Range**         | 01/02/2015 to 12/13/2024 |
+| **Platform/Engine**    | RealTest                 |
+| **Use Available Bars** | False                    |
 
 ### Summary Stats (Strategy 20 SPY)
 
 |                  | strategy_20SPY_long |
 | ---------------- | ------------------- |
 | **Periods**      | 2,503               |
-| **NetProfit**    | \$106,616           |
+| **NetProfit**    | $106,616            |
 | **Comp**         | True                |
 | **ROR**          | 7.70%               |
 | **MaxDD**        | **-13.99%**         |
@@ -175,9 +175,9 @@ _From latest backtest covering 1/2/2015 – 12/13/2024_
 | **LossLen**      | 35.83               |
 | **Expectancy**   | **4.76%**           |
 | **TradeLen**     | 68.59               |
-| **AvgWinAmt**    | \$11,428.63         |
-| **AvgLossAmt**   | \$3,183.23          |
-| **ExpectAmt**    | \$6,271.50          |
+| **AvgWinAmt**    | $11,428.63          |
+| **AvgLossAmt**   | $3,183.23           |
+| **ExpectAmt**    | $6,271.50           |
 | **ProfitFactor** | **6.58**            |
 | **Sharpe**       | **0.84**            |
 | **Volatility**   | 9.21%               |
